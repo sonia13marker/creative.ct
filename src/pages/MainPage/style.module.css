@@ -121,3 +121,43 @@
     height: 7px;
     margin-left: 50px;
 }
+
+@media screen and (max-width:1280px) {
+    .main__alltext {
+        margin-right: 0;
+    }
+    .main__h1 {
+        font-size: 55px;
+    }
+    .main__h2 {
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 1024px) { 
+    .main {
+        grid-template-columns: 1fr 20rem;
+    }
+    .rightBlock {
+        width: 20rem;
+    }
+    
+}
+@media screen and (max-width:780px) {
+    .main {
+        grid-template-columns: 1fr 10.5rem;
+    }
+    .rightBlock {
+        width: 10.5rem;
+    }
+    .main__h1 {
+        font-size: 45px;
+    }
+    .main__h2 {
+        font-size: 40px;
+    }
+    .main__btn {
+        font-size: 18px;
+    }
+}
