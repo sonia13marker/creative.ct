@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*определение основных цветов*/
+:root {
+  --main-white: #fff;
+  --main-black: #241C17;
+  --main-yel: #FFDB4D;
+}
