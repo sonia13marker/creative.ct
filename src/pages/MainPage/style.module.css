@@ -5,11 +5,11 @@
     overflow: hidden;
 }
 .main {
-    width: 100%;
+    width: 100vw;
     background-color: var(--main-white);
     height: 80%;
     display: grid;
-    grid-template-columns: minmax(60%, 70%) 36rem;
+    grid-template-columns: 1fr 36rem;
     grid-template-rows: 1fr;
     justify-content: flex-end;
 }
@@ -19,6 +19,7 @@
     align-items: flex-end;
     width: 60%;
     height: 80%; */
+    width: 1fr;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .wrap {
-    display: flex;
+    /* display: flex; */
+    /* display: grid; */
     width: 100vw;
     height: 110px;
     background-color:var(--main-white);
@@ -13,12 +14,15 @@
 .wrap__nav {
     height: 100%;
     width: 100%;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between */
+    display: grid;
+    grid-template-columns: 13rem 1fr 36rem;
+    grid-template-rows: 1fr;
 }
 .nav__logo {
-    width: 205px;
+    width: 13rem;
     border-right: 1.5px solid var(--main-black);
     height: 100%;
     display: flex;
@@ -31,16 +35,22 @@
     
 }
 .nav__ul {
-    width: 42%;
-    margin-left: 70px;
+    max-width: 50rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
 }
+
+/* .nav__ul:first-child {
+    margin-left: 25%;
+} */
+
 .nav__ul > li {
     list-style-type: none;
+}
+.nav__ul > li:first-child {
+    margin-left: 5%;
 }
 .nav__link {
     text-decoration: none;
@@ -48,7 +58,7 @@
     font-size: 15px;
     font-weight: 400;
     color: var(--main-black);
-    margin-right: 80px;
+    padding-right: 80px;
 }
 /*эффект при наведении*/
 .nav__link:hover {
@@ -56,6 +66,7 @@
 }
 
 .nav__span {
+    display: block;
     width: 36rem;
     background-color: var(--main-yel);
     height: 100%;
