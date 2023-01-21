@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main {
+    width: 100%;
+    background-color: var(--main-white);
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main__alltext {
+    width: 500px;
+    height: 360px;
+    display: block;
+    margin-right: 255px;
+}
+
+.main__h1 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color: var(--main-black);
+    /* line-height: 70px; */
+
+}
+.main__h2 {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+    color: var(--main-black);
+    /* line-height: 75px; */
+}
+
+.main__btn {
+    width: 290px;
+    height: 80px;
+    background-color: var(--main-yel);
+    border: none;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #241C17;
+    margin-top: 45px;
+}
+.btn__arr {
+    padding-left: 25px;
+}
+
+.main__btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.main__block {
+    display: block;
+    width: 575px;
+    height: 80vh;
+    border-left: 1.5px solid var(--main-black);
+    background-color: var(--main-yel);
+}
+
+.main__line {
+    display: block;
+    width: 70vw;
+    height: 1.5px;
+    background-color: #241C17;
+    margin-right: 575px;
+    margin-top: -95px;
+}
+
+.blackline {
+    width: 100vw;
+    height: 5vh;
+    display: block;
+    background-color: var(--main-black);
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.line__text {
+    color: var(--main-white);
+    font-family: 'Sintony', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 50px;
+    /* position: absolute;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 10s; */
+}
+
+
+/* @keyframes run {
+    0% {
+        left: 0;
+      }
+      100% {
+        left: 100%;
+}
+   
+} */
+.line__text > img {
+    width: 7px;
+    height: 7px;
+    margin-left: 50px;
+}
