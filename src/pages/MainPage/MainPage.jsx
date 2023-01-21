@@ -1,11 +1,21 @@
 import style from './style.module.css';
 import arrow from '../../images/arrow.svg';
-import ellipse from '../../images/ellipse.png';
+// import ellipse from '../../images/ellipse.png';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
+import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
+import MediaQuery from 'react-responsive';
+
+
 
 export function MainPage () {
     return <div>
-        <HeaderMenuFull />
+        <MediaQuery minWidth={700}>
+            <HeaderMenuFull />
+        </MediaQuery>
+        <MediaQuery maxWidth={320}>
+            <MenuHamb/>
+        </MediaQuery>
+
         <main className={style.main}>
            <div className={style.leftBlock}>
             <div className={style.main__alltext}>
