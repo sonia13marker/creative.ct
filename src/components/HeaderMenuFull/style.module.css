@@ -56,7 +56,7 @@
 }
 
 .nav__span {
-    width: 575px;
+    width: 36rem;
     background-color: var(--main-yel);
     height: 100%;
     border-left: 1.5px solid var(--main-black);
