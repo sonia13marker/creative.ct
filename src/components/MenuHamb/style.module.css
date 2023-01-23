@@ -1,152 +1,95 @@
+.layer {
+  position: relative;
+}
+
 .wrap {
-    width: 100vw;
-    height: 110px;
-    background-color:var(--main-white);
-    border-bottom: 1.5px solid var(--main-black);
+  /* display: flex; */
+  /* display: grid; */
+  width: 100vw;
+  height: 110px;
+  background-color:var(--main-white);
+  border-bottom: 1.5px solid var(--main-black);
 }
-
 .wrap__nav {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 7rem 1fr;
-    grid-template-rows: 1fr;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between */
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  grid-template-rows: 1fr;
 }
-
 .nav__logo {
-    background: url(../../images/logo2.svg) center center no-repeat;
-    width: 7rem;
-    border-right: 1.5px solid var(--main-black);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background: url(../../images/logo.svg) center center no-repeat;
+  width: 7rem;
+  border-right: 1.5px solid var(--main-black);
+  height: 110px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
-.mh {
-    top: 35px;
-    right: 5px;
-    z-index: 1;
-    width: 100%;
-    position: absolute;
-  }
-  .mh .menu {
-    top: 5px;
-    right: 30px;
-    margin: 0;
-    z-index: 1;
-    width: 10%;
-    height: 100vh;
-    background: var(--main-yel);
-    padding: 10em 0 2em;
-    position: absolute;
-    transform: translateY(-100%);
-    transition: transform 0.3s cubic-bezier(1, 0.5, 0, 1);
-  }
-  .mh .menu.active {
-    transform: translateY(0);
-  }
-  .mh .menu li {
-    list-style: none;
-  }
-  .mh .menu li a {
-    padding: 15px 30vw;
-    color: var(--main-black);
-    display: block;
-    background: none;
-    font-size: 15px;
-    font-family: 'Sintony', sans-serif;
-    text-decoration: none;
-    transition: background 0.2s ease-in-out;
-  }
-  
-  .mh .menu li a:hover, .mh .menu li a:focus, .mh .menu li a:active {
-    background: var(--main-white);
-  }
-  .menu-toggle {
-    top: 5px;
-    z-index: 2;
-    right: 12px;
-    width: 25px;
-    height: 5px;
-    padding: 9px 0;
-    cursor: pointer;
-    position: absolute;
-  }
-  .menu-toggle span {
-    height: 5px;
-    margin-top: -1px;
-    display: block;
-    overflow: hidden;
-    text-indent: 100%;
-    background: var(--main-yel);
-    white-space: nowrap;
-    transition: background 0.3s ease-in-out;
-  }
-  .menu-toggle::before, .menu-toggle::after {
-    left: 0;
-    content: '';
-    width: 25px;
-    height: 5px;
-    background: var(--main-yel);
-    position: absolute;
-    transform-origin: center center;
-    transition: width 0.2s ease-in-out, background 0.2s ease-in-out, transform 0.2s ease-in-out, top 0.2s ease-in-out, bottom 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out;
-  }
-  .menu-toggle::before {
-    top: 0;
-  }
-  .menu-toggle::after {
-    bottom: 0;
-  }
-  .menu-toggle.menu-open span {
-    background: rgba(255, 255, 255, 0);
-  }
-  .menu-toggle.menu-open::before {
-    top: 8px;
-    transform: rotate(-45deg);
-  }
-  .menu-toggle.menu-open::after {
-    bottom: 8px;
-    transform: rotate(45deg);
-  }
-  .menu-toggle.menu-open::before, .menu-toggle.menu-open::after {
-    width: 26px;
-    background: var(--main-white);
-  }
-  .menu-toggle.menu-open:hover span, .menu-toggle.menu-open:focus span, .menu-toggle.menu-open:active span {
-    background: rgba(255, 255, 255, 0);
-  }
-  .menu-toggle.menu-open:hover::before, .menu-toggle.menu-open:focus::before, .menu-toggle.menu-open:active::before {
-    top: 8px;
-    left: -3px;
-    transform: rotate(-45deg);
-  }
-  .menu-toggle.menu-open:hover::after, .menu-toggle.menu-open:focus::after, .menu-toggle.menu-open:active::after {
-    left: 9px;
-    bottom: 8px;
-    transform: rotate(45deg);
-  }
-  .menu-toggle.menu-open:hover::before, .menu-toggle.menu-open:focus::before, .menu-toggle.menu-open:active::before, .menu-toggle.menu-open:hover::after, .menu-toggle.menu-open:focus::after, .menu-toggle.menu-open:active::after {
-    width: 18px;
-  }
-  .menu-toggle:hover span, .menu-toggle:focus span, .menu-toggle:active span {
-    background: rgba(255, 255, 255, 0);
-  }
-  .menu-toggle:hover::before, .menu-toggle:focus::before, .menu-toggle:active::before {
-    top: 8px;
-    left: -3px;
-    transform: rotate(45deg);
-  }
-  .menu-toggle:hover::after, .menu-toggle:focus::after, .menu-toggle:active::after {
-    left: 9px;
-    bottom: 8px;
-    transform: rotate(-45deg);
-  }
-  .menu-toggle:hover::before, .menu-toggle:focus::before, .menu-toggle:active::before, .menu-toggle:hover::after, .menu-toggle:focus::after, .menu-toggle:active::after {
-    width: 18px;
-  }
-  
+.container {
+  width: 300px;
+  height: 300px;
+  z-index: 1000;
+}
 
+.button_menu {
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  top: 35px;
+  right: 55px;
+  cursor: pointer;
+  z-index: 1001;
+  background-color: blueviolet;
+}
+
+.button_menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  background-color: blue;
+  width: 40px;
+  height: 3px;
+  transition: transform .3s, width .3s;
+}
+
+.button_menu span {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  background-color: blue;
+  width: 50px;
+  height: 3.5px;
+  transition: opacity .3s;
+}
+
+.button_menu:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  background-color: blue;
+  width: 30px;
+  height: 3px;
+  transition: transform .3s, width .3s;
+}
+
+.button_menu_active span {
+  opacity: 0;
+}
+
+.button_menu_active:before {
+  transform: rotate(45deg) translateY(16px);
+  width: 50px;
+}
+
+.button_menu_active:after {
+  left: 0;
+  transform: rotate(-45deg) translateY(-16px);
+  width: 50px;
+}
