@@ -20,6 +20,7 @@
     width: 60%;
     height: 80%; */
     width: 1fr;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -85,7 +86,7 @@
 
 .blackline {
     width: 100vw;
-    height: 5vh;
+    height: 100vh;
     display: block;
     background-color: var(--main-black);
     overflow-x: hidden;
@@ -161,13 +162,88 @@
         font-size: 18px;
     }
 }
-@media screen and (max-width: 320px) {
-    .leftBlock {
-        align-items: center;
-        justify-content: center;
+@media screen and (max-width: 699px) {
+    .main {
+        grid-template-columns: 1fr 10.5rem;
+        height: 75vh;
     }
+    .leftBlock {
+        justify-content: center;
+
+    }
+    .main__alltext {
+        width: 430px;
+    }  
+}
+
+@media screen and (max-width: 612px) {
+    .main__alltext {
+        width: 380px;
+    }
+    .main__h1 {
+        font-size: 40px;
+    }
+    .main__h2 {
+        font-size: 35px;
+    }
+    .main__btn {
+        font-size: 15px;
+        width: 250px;
+        height: 70px;
+    }
+    
+}
+@media screen and (max-width: 555px) {
+    .main__alltext {
+        width: 350px;
+    }
+    .main__h1 {
+        font-size: 35px;
+    }
+    .main__h2 {
+        font-size: 30px;
+    }
+    .main__btn {
+        font-size: 15px;
+        width: 230px;
+        height: 60px;
+    }
+    
+}
+@media screen and (max-width: 520px) {
+    .main__alltext {
+        width: 300px;
+    }
+    
+}
+@media screen and (max-width: 475px) {
+    .main__alltext {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .main {
+        grid-template-columns: 1fr 7rem;
+        height: 75vh;
+    }
+    .rightBlock {
+        width: 7rem;
+    }
+}
+
+@media screen and (max-width: 412px) {
+
     .main {
         grid-template-columns: 1fr 4.5rem;
+        height: 75vh;
+    }
+    .leftBlock {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 5rem;
+        height: 80%;
     }
     .main__alltext{ 
         width: 200px;
@@ -196,6 +272,9 @@
     }
     .main__line {
         display: none;
+    }
+    .blackline { 
+        height: 8vh;
     }
     
 }

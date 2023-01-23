@@ -93,3 +93,12 @@
   transform: rotate(-45deg) translateY(-16px);
   width: 50px;
 }
+@media screen and (max-width: 699px) {
+  .wrap__nav {
+      grid-template-columns: 13rem 1fr;
+  }
+  .nav__logo {
+      width: 13rem;
+  }
+  
+}
