@@ -4,7 +4,7 @@ import style from './style.module.css';
 export function HeaderMenuFull () {
     return <div className={style.wrap}>
     <nav className={style.wrap__nav}>
-        <span className={style.nav__logo} />
+        <a href="creative.ct/"><span className={style.nav__logo}></span></a>
         <ul className={style.nav__ul}> 
             <li><a href="/rules" className={style.nav__link}>Правила</a></li>
             <li><a href="/#" className={style.nav__link}>Конкурсы</a></li>

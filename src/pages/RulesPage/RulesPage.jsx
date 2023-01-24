@@ -1,3 +1,4 @@
+import { Footer } from '../../components/Footer/Footer';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import style from './style.module.css';
 
@@ -60,5 +61,6 @@ export function RulesPage () {
                 </span>
             </div>
         </div>
+        <Footer/>
     </div>
 }
