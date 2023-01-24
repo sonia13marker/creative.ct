@@ -1,4 +1,6 @@
+import MediaQuery from 'react-responsive';
 import { Footer } from '../../components/Footer/Footer';
+import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import style from './style.module.css';
 
@@ -61,6 +63,11 @@ export function RulesPage () {
                 </span>
             </div>
         </div>
-        <Footer/>
+        <MediaQuery minWidth={576}>
+            <Footer/>
+        </MediaQuery>
+        <MediaQuery maxWidth={575}> 
+            <FooterSmall />
+        </MediaQuery>
     </div>
 }
