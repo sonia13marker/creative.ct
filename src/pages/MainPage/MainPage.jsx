@@ -5,6 +5,7 @@ import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import MediaQuery from 'react-responsive';
 import { MainContent } from '../../components/MainContent/MainContent';
 import useMediaQuery from 'react-responsive';
+import style from './style.module.css';
 
 const Mobile = ({children}) => {
     const isMobile = useMediaQuery({minWidth: 699, maxWidth: 700})
@@ -14,7 +15,9 @@ const Mobile = ({children}) => {
 export function MainPage () {
     
   
-    return <div style={{overflowX: "hidden", overflowY: "hidden"}}>
+    return <div className={style.corpus}>
+
+        
         <MediaQuery minWidth={700}>
             <HeaderMenuFull />
         </MediaQuery>
@@ -22,11 +25,11 @@ export function MainPage () {
             <MenuHamb/>
         </MediaQuery>
 
-{/*проба - не работает, тут пока просто ни-че-го*/}
+{/*проба - не работает, тут пока просто ни-че-го
         <Mobile>
             <MenuHamb/>
         </Mobile>
-
+*/}
 
         {/*подключение контента под меню (шапкой) */}
         <MainContent />
