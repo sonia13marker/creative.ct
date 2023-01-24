@@ -14,7 +14,7 @@ const Mobile = ({children}) => {
 export function MainPage () {
     
   
-    return <div>
+    return <div style={{overflowX: "hidden", overflowY: "hidden"}}>
         <MediaQuery minWidth={700}>
             <HeaderMenuFull />
         </MediaQuery>
