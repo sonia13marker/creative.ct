@@ -6,7 +6,7 @@ export function HeaderMenuFull () {
     <nav className={style.wrap__nav}>
         <a href="creative.ct/"><span className={style.nav__logo}></span></a>
         <ul className={style.nav__ul}> 
-            <li><a href="/rules" className={style.nav__link}>Правила</a></li>
+            <li><a href="creative.ct/rules" className={style.nav__link}>Правила</a></li>
             <li><a href="/#" className={style.nav__link}>Конкурсы</a></li>
             <li><a href="/#" className={style.nav__link}>О проекте</a></li>
         </ul>
