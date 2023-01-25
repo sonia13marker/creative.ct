@@ -5,14 +5,15 @@ import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import style from './style.module.css';
 
 export function RulesPage () {
-    return <div>
+    return <div className={style.ov}>
         <HeaderMenuFull/>
         <div className={style.container}>
+        <div className={style.rules_cont}>
             <h2 className={style.container__h2}>
             Перед участием в конкурсе <br/> обязательно ознакомьтесь с нашими <span className={style.h2__span}>правилами</span>
             </h2>
             
-            <div className={style.rules_cont}>
+            
                 {/*rule 1 */}
                 <span className={style.rule}>
                     <span className={style.rules__header}>

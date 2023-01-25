@@ -2,17 +2,18 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
+}
+.ov {
+    overflow-x: hidden;
 }
 
 .container {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px auto;
+    height: auto;
+    margin: 100px 0 100px;
+
 
 }
 
@@ -22,10 +23,10 @@
     font-size: 30px;    
     color: var(--main-black);
     width: 845px;
-    margin-top: 50px;
-    margin-bottom: 115px;
+    margin-top: 30px;
+    margin-bottom: 130px;
+    margin-left: 30px;
     align-self: flex-start;
-    margin-left: 14rem;
 }
 
 .h2__span {
@@ -37,16 +38,21 @@
 }
 .rule {
     display: grid;
-    grid-template-columns: 510px 540px;
+    grid-template-columns: 500px 500px;
     grid-template-rows: 1fr;
     align-items: baseline;
+    justify-content: space-around;
     column-gap: 40px;
+    justify-items: stretch;
 }
 
 .rules_cont {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr 50px);
+    grid-template-rows: 200px repeat(4, 1fr 50px);
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .rules__header {
@@ -80,12 +86,10 @@
 }
 hr {
     background-color: black;
-    width: 100%;
+    width: 95%;
     height: 1.5px;
     align-self: center;
     justify-self: center;
-    /* margin-top: 30px;
-    margin-bottom: 10px; */
 }
 .attention {
     width: min-content;
