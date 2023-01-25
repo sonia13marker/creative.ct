@@ -24,8 +24,7 @@ export function MenuHamb () {
           </div>
           <Menu active={menuActive} setActive={setMenuActive}/>
       </div> */}
- 
-              <MainContent/>
+
  </div> )
  
     

@@ -2,11 +2,18 @@ import MediaQuery from 'react-responsive';
 import { Footer } from '../../components/Footer/Footer';
 import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
+import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import style from './style.module.css';
 
 export function RulesPage () {
     return <div className={style.ov}>
-        <HeaderMenuFull/>
+        <MediaQuery minWidth={700}>
+            <HeaderMenuFull />
+        </MediaQuery>
+        <MediaQuery maxWidth={699}> 
+            <MenuHamb/>
+        </MediaQuery>
+
         <div className={style.container}>
         <div className={style.rules_cont}>
             <h2 className={style.container__h2}>
