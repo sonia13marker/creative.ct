@@ -3,10 +3,11 @@ import MediaQuery from 'react-responsive';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { YearContests } from '../../components/YearContests/YearContests';
-import information from '../../constants/mock.json';
+import infos from '../../constants/mock.json';
+/*тут будет инфа о всех конкурсах*/
 
-export function ContestPage () {
-
+export function ContestPage (props) {
+console.log(props)
     // var information = [
     //     {
     //         "id": 1,
@@ -52,8 +53,14 @@ export function ContestPage () {
             <MenuHamb/>
         </MediaQuery>
 
-        {/*тут будет инфа о конкурсах за определенный год */}
-        <YearContests information={information}></YearContests>
+        {/*тут будет инфа о всех конкурсах*/}
+        {
+infos.map((info, i) => {
+                <YearContests key={i}
+                year={info.year}
+                ></YearContests>
+            })
+        }
 
     </div>)
 }
