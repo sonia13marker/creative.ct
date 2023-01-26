@@ -8,7 +8,7 @@ export function HeaderMenuFull () {
         <ul className={style.nav__ul}> 
             <li><a href="/rules" className={style.nav__link}>Правила</a></li>
             <li><a href="/contests" className={style.nav__link}>Конкурсы</a></li>
-            <li><a href="/#" className={style.nav__link}>О проекте</a></li>
+            <li><a href="/about" className={style.nav__link}>О проекте</a></li>
         </ul>
         <span className={style.nav__span}>
             <button className={style.span__btn}><p className={style.btn__t}>Войти в аккаунт</p></button>
