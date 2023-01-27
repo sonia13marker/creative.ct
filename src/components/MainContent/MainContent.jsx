@@ -2,6 +2,7 @@ import style from './style.module.css'
 import arrow from '../../images/arrow.svg';
 
 
+
 export function MainContent () {
     return <><main className={style.main}>
     <div className={style.leftBlock}>
@@ -17,7 +18,14 @@ export function MainContent () {
      
      <div className={style.rightBlock}></div>
     </main>
-    <div className={style.blackline}></div>
+    <div className={style.marquee_container}>
+        <p className={style.marquee}>
+        ●    твое творческое состязание    ●    твое творческое состязание    ●    твое творческое состязание    ●    твое творческое состязание    ●
+        </p>
+        <p className={style.marquee_2}>
+        ●    твое творческое состязание    ● 
+        </p>
+    </div>
     </>}
 
 
