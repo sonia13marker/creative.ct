@@ -26,6 +26,7 @@
     height: 360px;
     display: block;
     margin-right: 55px;
+    position: relative;
 }
 
 .main__h1 {
@@ -33,8 +34,18 @@
     font-weight: 600;
     font-size: 60px;
     color: var(--main-black);
-
+    z-index: 10;
+    position: relative;
 }
+.main__yel {
+    width: 310px;
+    height: 30px;
+    display: block;
+    background-color: var(--main-yel);
+    position: absolute;
+    top: 35px;
+}
+
 .main__h2 {
     font-family: 'Sintony', sans-serif;
     font-weight: 400;
@@ -270,6 +281,10 @@
     .main__h2 {
         font-size: 50px;
     }
+    .main__yel {
+        width: 290px;
+       
+    }
     
 }
 
@@ -309,8 +324,13 @@
         margin-right: 20px;
     }
     .main__btn {
-        width: 270px;
+        width: 275px;
         height: 70px;
+    }
+    .main__yel {
+        width: 260px;
+        height: 25px;
+        top: 30px;
     }
 }
 
@@ -343,6 +363,11 @@
     .main__h2 {
         font-size: 40px;
     }
+    .main__yel {
+        width: 235px;
+        height: 25px;
+        top: 25px;
+    }
 }
 
 @media screen and (max-width: 837px) {
@@ -372,6 +397,7 @@
     }
     .main__btn {
         font-size: 18px;
+        padding: 0;
     }
 }
 @media screen and (max-width: 699px) {
@@ -403,6 +429,11 @@
         width: 250px;
         height: 70px;
     }
+    .main__yel {
+        width: 210px;
+        height: 25px;
+        top: 20px;
+    }
     
 }
 @media screen and (max-width: 555px) {
@@ -420,6 +451,11 @@
         width: 230px;
         height: 60px;
     }
+    .main__yel {
+        width: 180px;
+        height: 20px;
+        top: 20px;
+    }
     
 }
 @media screen and (max-width: 520px) {
@@ -432,6 +468,16 @@
     .main__alltext {
         width: 280px;
     }
+}
+@media screen and (max-width: 440px) {
+    .leftBlock {
+        align-items: center;
+    }
+    .main__alltext {
+        width: 260px;
+        margin-left: 30px;
+    }
+    
 }
 
 @media screen and (max-width: 699px) {
