@@ -1,0 +1,66 @@
+.wrapper {
+
+}
+
+.wrapper__timer {
+
+}
+
+.wrapper__form {
+
+}
+
+.form__textarea {
+
+}
+
+.form__wrp {
+
+}
+
+label {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--main-black);
+}
+
+.input_textarea {
+    width: 490px;
+    height: 290px;
+    background-color: var(--main-white);
+    border: 1.5px solid var(--main-black);
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-black);
+}
+
+.span_inputs {
+
+}
+
+.input_link {
+    width: 410px;
+    height: 60px;
+    background-color: var(--main-white);
+    border: 1.5px solid var(--main-black);
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-black);
+}
+
+.input_file {
+    width: 255px;
+    height: 45px;
+    background-color: var(--main-white);
+    border: 1.5px solid var(--main-black);
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-black);
+}
+.input_submit {
+
+}
