@@ -2,11 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 .wr {
     overflow-x: hidden;
-    width: 100vw;
-    height: auto;
+    /* width: 100vw;
+    height: auto; */
 }
 
 .wrapper {

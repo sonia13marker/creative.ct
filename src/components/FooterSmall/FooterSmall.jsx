@@ -9,7 +9,7 @@ export function FooterSmall () {
             <span><a href="creative.ct/" className={style.wrap__link}>Главная</a></span>
             <span><a href="/rules" className={style.wrap__link}>Правила</a></span>
             <span><a href="/#" className={style.wrap__link}>Конкурсы</a></span>
-            <span><a href="/#" className={style.wrap__link}>О проекте</a></span>
+            <span><a href="/about" className={style.wrap__link}>О проекте</a></span>
 
 
 

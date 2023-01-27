@@ -50,17 +50,17 @@
     font-family: 'Sintony', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    color: #241C17;
+    color: #000;
     margin-top: 45px;
 }
 .btn__arr {
     padding-left: 25px;
 }
 
-.main__btn:hover {
+/* .main__btn:hover {
     cursor: pointer;
     opacity: 0.6;
-}
+} */
 
 .rightBlock {
     display: block;
@@ -75,7 +75,7 @@
     display: block;
     width: 100%;
     height: 1.5px;
-    background-color: #241C17;
+    background-color: var(--main-black);
 }
 
 .blackline {
@@ -116,6 +116,149 @@
     height: 7px;
     margin-left: 50px;
 }
+
+/*стили для кнопки*/
+.main__btn,
+.main__btn *,
+.main__btn :after,
+.main__btn :before,
+.main__btn:after,
+.main__btn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.main__btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #FFDB4D;
+  color: #000;
+  cursor: pointer;
+  font-family: 'Sintony', sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 400;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.main__btn:disabled {
+  cursor: default;
+}
+.main__btn:-moz-focusring {
+  outline: auto;
+}
+.main__btn svg {
+  display: block;
+  vertical-align: middle;
+}
+.main__btn [hidden] {
+  display: none;
+}
+.main__btn {
+  box-shadow: inset 0 0 0 2px #fff;
+  box-sizing: border-box;
+  display: block;
+  width: 290px;
+  height: 80px;
+  background-color: var(--main-yel);
+  margin-top: 45px;
+  padding: 1.2rem 3rem;
+  position: relative;
+  transition: color 0.1s linear;
+}
+.main__btn:after,
+.main__btn:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.main__btn:before {
+  border-right: var(--border);
+  border-top: var(--border);
+  left: 0;
+  top: 0;
+}
+.main__btn:hover:before {
+  --border: 2px solid #000;
+  -webkit-animation: border-top-and-right 1s forwards;
+  animation: border-top-and-right 1s forwards;
+}
+.main__btn:after {
+  border-bottom: var(--border);
+  border-left: var(--border);
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.main__btn:hover:after {
+  --border: 2px solid #000;
+  -webkit-animation: border-bottom-and-left 1s forwards;
+  animation: border-bottom-and-left 1s forwards;
+}
+@-webkit-keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/*конец стилей для кнопки*/
 
 @media screen and (max-width:1280px) {
     .main__alltext {
