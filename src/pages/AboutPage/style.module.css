@@ -101,3 +101,252 @@
     color: #555;
 
 }
+@media screen and (max-width:1435px) {
+    .section_text {
+    padding-left: 3.5rem;
+    }
+    .members {
+       padding-left: 3.5rem; 
+    }
+    .members > img {
+        aspect-ratio: 5/4;
+        width: 100%;
+        
+        object-fit: contain;
+    }
+    .members__media {
+        margin-left: -1.5rem;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+   .members {
+       padding-left: 2.5rem; 
+    } 
+    
+}
+
+@media screen and (max-width: 1345px) {
+    .section_text {
+    padding-left: 2.5rem;
+    }
+    .members__h3 {
+        width: 160px;
+    }
+    .media__links {
+        width: 110px;
+    }
+    .members {
+        padding-left: 30px;
+        margin-top: 3rem;
+    }
+    .members__media {
+        margin-left: -0.5rem;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .members {
+        padding-left: 15px;  
+    }
+}
+@media screen and (max-width: 1145px) {
+    .text__p {
+        max-width: 52rem;
+    }
+    .members {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .text__p {
+        max-width: 48rem;
+    }
+    .members {
+        width: 400px;
+        padding-left: 0;
+    }
+    .members__media {
+        margin-left: -1rem;
+    }
+
+}
+
+@media screen and (max-width: 1040px) {
+    .text__p {
+        max-width: 45rem;
+        font-size: 18px;
+    }
+    .block__members {
+        flex-direction: column;
+
+    }
+    .members {
+        padding-left: 3.5rem;
+    }
+    .members > img {
+        aspect-ratio: 4/4;
+    }
+    .members__h3 {
+        width: max-content;
+    }
+    .media__links {
+        width: max-content;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .wrapper {
+        margin-left: 10.5rem;
+    }
+    
+}
+@media screen and (max-width: 935px) {
+    .text__p {
+        font-size: 15px;
+        max-width: 40rem;
+    }
+    .text__h2 {
+        font-size: 40px;
+    }
+    .section_text {
+        height: min-content;
+        padding-bottom: 3.5rem;
+    }
+    .members {
+        margin-top: 1rem;
+        padding-bottom: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    .text__p {
+        max-width: 37rem;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .text__p {
+        max-width: 34rem;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .text__p {
+        max-width: 31rem;
+    }
+    .text__h2 {
+        font-size: 35px;
+    }
+    .members {
+        padding-left: 0;
+    }
+    .members__h3 {
+        font-size: 20px;
+    }
+    .media__links {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 705px) {
+    .text__p {
+        max-width: 28rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper {
+        width: 100vw;
+        margin-left: 0;
+    }
+    .section_text {
+        width: 85%;
+        margin-left: 3rem;
+    }
+    .members {
+        padding-left: 3rem;
+    }
+}
+@media screen and (max-width: 530px) {
+    .section_text {
+        width: 88%;
+        margin-left: 2rem;
+    }
+    .members {
+        padding-left: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 515px) {
+    .section_text {
+        width: 85%;
+        margin-left: 2rem;
+    }
+    .members {
+        padding-left: 1rem;
+    }
+    
+}
+@media screen and (max-width: 500px) {
+    .members {
+        padding-left: 0.5rem;
+    }
+    .block__members {
+        margin-top: 2rem;
+    }
+      
+}
+
+@media screen and (max-width: 490px) {
+    .members {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .members__media {
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .members__post {
+        margin-bottom: 30px;
+    }
+ 
+}
+@media screen and (max-width: 440px) {
+    .section_text {
+        margin-left: 3rem;
+        padding-left: 0;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .section_text {
+        margin-left: 2rem;
+    }
+    .members {
+        margin-left: -1rem;
+    }
+}
+@media screen and (max-width: 365px) {
+    .members > img {
+        aspect-ratio: 5/4;
+        margin-left: -1.5rem;
+    }
+    .block__members {
+        margin-bottom: 10rem;
+    }
+    
+}
+@media screen and (max-width: 345px) {
+    .section_text {
+        margin-left: 1rem;
+    }
+    
+}
+@media screen and (max-width: 330px) {
+    .section_text {
+        width: 75%;
+    }
+    
+}

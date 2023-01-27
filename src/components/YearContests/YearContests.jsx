@@ -2,8 +2,8 @@ import { OneYearContest } from '../OneYearContest/OneYearContest';
 import style from './style.module.css';
 
 /*тут отображение всех конкурсов за один год */
-export function YearContests ({year, contents}) {
-console.log(year);
+export function YearContests (props) {
+console.log(props.year);
     return (<>
         {/*контейнер для одинаковых отступов от краев*/}
         <div className={style.container}>

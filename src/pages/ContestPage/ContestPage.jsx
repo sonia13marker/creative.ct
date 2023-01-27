@@ -4,10 +4,9 @@ import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { YearContests } from '../../components/YearContests/YearContests';
 import infos from '../../constants/mock.json';
-/*тут будет инфа о всех конкурсах*/
+/*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
 
 export function ContestPage (props) {
-console.log(props)
     // var information = [
     //     {
     //         "id": 1,
@@ -54,13 +53,14 @@ console.log(props)
         </MediaQuery>
 
         {/*тут будет инфа о всех конкурсах*/}
-        {
+        {/* {
 infos.map((info, i) => {
                 <YearContests key={i}
                 year={info.year}
                 ></YearContests>
             })
-        }
+        } */}
+        <YearContests infos={infos.year}></YearContests>
 
     </div>)
 }

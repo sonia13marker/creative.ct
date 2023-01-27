@@ -1,6 +1,6 @@
 import style from './style.module.css';
 
-/*тут отображение деталей одного конкурса */
+/*тут отображение деталей одного конкурса за определенный год */
 export function OneYearContest ({name, status, date}) {
 
     return (<div>
