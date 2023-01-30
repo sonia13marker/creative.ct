@@ -1,4 +1,5 @@
 .wrapper {
+    overflow-x: hidden;
 }
 
 .wrapper__timer {
@@ -74,8 +75,11 @@ label {
     border: 1px solid #FFDB4D;
     outline: none;
 }
+.span_inputs { 
+    position: relative;
+}
 
-.span_inputs span {
+/* .span_inputs span {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -89,15 +93,60 @@ label {
     font-weight: 400;
     font-size: 18px;
     color: var(--main-black);
+} */
+.button_label {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
+    width: 255px;
+    height: 45px;
+    background-color: var(--main-white);
+    border: 1.5px solid var(--main-black);
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--main-black);
+    z-index: 1000;
 }
-span > .input_file {
-    display: none;
+.button_label:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #FFDB4D;
+    transition: .1s color;
 }
-.span_inputs span:focus {
+.button_label:focus {
     border: 1px solid #FFDB4D;
     outline: none;
 }
-.span_inputs span:hover {
+.button_label:active {
+    background-color: #FFDB4D;
+    color: #fff;
+    border: 1.5px solid #000;
+    cursor: pointer; 
+}
+/* #form__input_file {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+} */
+.input_file {
+    position: absolute;
+    top: 210px;
+    left: 9vw;
+    z-index: 1;
+}
+/* span > .input_file {
+} */
+/* .span_inputs span:focus {
+    border: 1px solid #FFDB4D;
+    outline: none;
+} */
+
+
+/* .span_inputs span:hover {
     cursor: pointer;
     background-color: #fff;
     color: #FFDB4D;
@@ -108,7 +157,7 @@ span > .input_file {
     color: #fff;
     border: 1.5px solid #000;
     cursor: pointer;
-}
+} */
 
 
 .input__annotation {
@@ -307,4 +356,57 @@ span > .input_file {
     label, .btn_23 {
         font-size: 17px;
     }
+}
+
+/*медиазапросы для кнопки "добавить файл"*/
+@media screen and (max-width: 1925px) {
+    .input_file {
+        left: 9vw;
+    }
+}
+
+@media screen and (max-width: 1445px) {
+    .input_file {
+        left: 10vw;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .input_file {
+        left: 13.5vw;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .input_file {
+        top: 200px;
+        left: 18vw;
+    }
+} 
+
+@media screen and (max-width: 430px) {
+    .input_file {
+        top: 200px;
+        left: 27.5vw;
+    }
+} 
+
+@media screen and (max-width: 400px) {
+    .button_label {
+        width: 200px;
+    }
+    .input_file {
+        top: 200px;
+        left:16vw;
+    }
+    
+}
+@media screen and (max-width: 340px) {
+    .button_label {
+        width: 180px;
+    }
+    .input_file {
+        top: 200px;
+        left:13vw;
+    }
+    
 }
