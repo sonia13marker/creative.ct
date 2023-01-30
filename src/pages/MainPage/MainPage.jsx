@@ -6,7 +6,7 @@ import MediaQuery from 'react-responsive';
 import { MainContent } from '../../components/MainContent/MainContent';
 import useMediaQuery from 'react-responsive';
 import style from './style.module.css';
-import { SubmitRequest } from '../SubmitRequest/SubmitRequest';
+
 
 const Mobile = ({children}) => {
     const isMobile = useMediaQuery({minWidth: 699, maxWidth: 700})

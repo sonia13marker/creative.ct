@@ -1,7 +1,7 @@
 import style from './style.module.css';
 import Countdown from 'react-countdown';
 
-export function SubmitRequest () {
+export function SubmitRequestPage () {
     return (<div>
         <div className={style.wrapper}>
 
