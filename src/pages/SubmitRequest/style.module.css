@@ -7,15 +7,24 @@
 }
 
 .wrapper__form {
-
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.form__textarea {
-
-}
 
 .form__wrp {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 65vw;
+    column-gap: 40px;
+    margin: 100px auto;
+    justify-content: center;
+    align-items: start;
+    justify-items: start;
 }
 
 label {
@@ -26,21 +35,31 @@ label {
 }
 
 .input_textarea {
+    margin-top: 20px;
     width: 490px;
     height: 290px;
+    padding: 0.5rem;
     background-color: var(--main-white);
     border: 1.5px solid var(--main-black);
     font-family: 'Sintony', sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: var(--main-black);
+    resize: none;
+}
+.input_textarea:focus {
+    border: 1px solid #FFDB4D;
+    outline: none;
 }
 
 .span_inputs {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .input_link {
+    padding: 0.5rem;
+    margin-top: 20px;
     width: 410px;
     height: 60px;
     background-color: var(--main-white);
@@ -49,9 +68,19 @@ label {
     font-weight: 400;
     font-size: 18px;
     color: var(--main-black);
+    margin-bottom: 50px;
+}
+.input_link:focus {
+    border: 1px solid #FFDB4D;
+    outline: none;
 }
 
-.input_file {
+.span_inputs span {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0.5rem;
     width: 255px;
     height: 45px;
     background-color: var(--main-white);
@@ -61,6 +90,135 @@ label {
     font-size: 18px;
     color: var(--main-black);
 }
-.input_submit {
-
+span > .input_file {
+    display: none;
 }
+.span_inputs span:focus {
+    border: 1px solid #FFDB4D;
+    outline: none;
+}
+.span_inputs span:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #FFDB4D;
+    transition: .1s color;
+}
+.span_inputs span:active {
+    background-color: #FFDB4D;
+    color: #fff;
+    border: 1.5px solid #000;
+    cursor: pointer;
+}
+
+
+.input__annotation {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: justify;
+    color: var(--main-black);
+    max-width: 445px;
+    margin-top: 15px;
+}
+
+/*стили для кнопки "отправить/подать"*/
+
+.btn_23,
+.btn_23 *,
+.btn_23 :after,
+.btn_23 :before,
+.btn_23:after,
+.btn_23:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn_23 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #fff;
+  background-image: none;
+  color: #FFDB4D;
+  cursor: pointer;
+  font-family:'Ruda', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn_23:disabled {
+  cursor: default;
+}
+.btn_23:-moz-focusring {
+  outline: auto;
+}
+.btn_23 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn_23 [hidden] {
+  display: none;
+}
+.btn_23 {
+    margin-top: 35px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+  border: 1.5px solid var(--main-yel);
+  width: 250px;
+  height: 60px;
+}
+.btn_23 span {
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+.btn_23 .marquee {
+  --spacing: 6.5em;
+  --start: 0em;
+  --end: 6.5em;
+  -webkit-animation: marquee 1s linear infinite;
+  animation: marquee 1s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 0;
+  position: relative;
+  text-shadow: #FFDB4D var(--spacing) 0, #FFDB4D calc(var(--spacing) * -1) 0,
+    #FFDB4D calc(var(--spacing) * -2) 0;
+}
+
+.btn_23:hover .marquee {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn_23:hover .text {
+  opacity: 0;
+}
+.btn_23:active {
+    background-color: #FFDB4D;
+    color: #fff;
+    border: 1.5px solid #000;
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+  to {
+    transform: translateX(var(--end));
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
