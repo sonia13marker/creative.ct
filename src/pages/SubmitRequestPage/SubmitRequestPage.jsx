@@ -1,8 +1,20 @@
 import style from './style.module.css';
 import Countdown from 'react-countdown';
+import MediaQuery from 'react-responsive';
+import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
+import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
+import { Footer } from '../../components/Footer/Footer';
+import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 
 export function SubmitRequestPage () {
     return (<div>
+        <MediaQuery minWidth={700}>
+            <HeaderMenuFull />
+        </MediaQuery>
+        <MediaQuery maxWidth={699}> 
+            <MenuHamb/>
+        </MediaQuery>
+
         <div className={style.wrapper}>
 
         <section className={style.wrapper__timer}>
@@ -54,7 +66,13 @@ export function SubmitRequestPage () {
                 </form>
         </section>
         </div>
-        
+        <MediaQuery minWidth={576}>
+            <Footer/>
+        </MediaQuery>
+        <MediaQuery maxWidth={575}> 
+            <FooterSmall />
+        </MediaQuery>
+
     </div>
 
     )

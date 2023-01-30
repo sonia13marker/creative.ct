@@ -1,5 +1,6 @@
 .wrapper {
     overflow-x: hidden;
+    margin-bottom: 100px;
 }
 
 .wrapper__timer {
