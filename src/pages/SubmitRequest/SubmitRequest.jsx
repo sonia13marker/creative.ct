@@ -1,9 +1,24 @@
 import style from './style.module.css';
+import Countdown from 'react-countdown';
 
 export function SubmitRequest () {
     return (<div>
         <div className={style.wrapper}>
-        <section className={style.wrapper__timer}></section>
+
+        <section className={style.wrapper__timer}>
+            <h2 className={style.timer__h2}>До конца этапа подачи заявок</h2>
+            <p className={style.timer}>
+                {/*год-месяц-день*/}
+                <Countdown date="2023-03-15T00:00:00"/>
+                <span className={style.timer__desc}>дня</span>
+                <span className={style.timer__desc}>часов</span>
+                <span className={style.timer__desc}>минут</span>
+                <span className={style.timer__desc}>секунд</span>
+            </p>
+            <span className={style.timer__line}>
+                <p>Осталось</p>
+            </span>
+        </section>
 
         <section className={style.wrapper__form}>
                 {/*в action указать ссылку на обработку формы (бэк) */}

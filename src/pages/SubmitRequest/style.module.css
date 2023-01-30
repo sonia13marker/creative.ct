@@ -3,7 +3,60 @@
 }
 
 .wrapper__timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    position: relative;
 
+}
+
+.timer__h2 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: var(--main-black);
+}
+.timer {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 117px;
+    text-transform: uppercase;
+    color: var(--main-black);
+}
+.timer__desc {
+    display: table-cell;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--main-black);
+    text-transform: lowercase;
+    padding: 5px 45px;
+}
+
+.timer__line {
+    width: 350px;
+    height: 80px;
+    background-color: var(--main-yel);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    position: absolute;
+    top: 50px;
+}
+
+.timer__line > p {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: var(--main-black);
+    text-transform: lowercase;
 }
 
 .wrapper__form {
