@@ -5,6 +5,7 @@ import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { YearContests } from '../../components/YearContests/YearContests';
 import infos from '../../constants/mock.json';
 import { SubmitRequestPage } from '../SubmitRequestPage/SubmitRequestPage';
+import { WaitingVotePage } from '../WaitingVotePage/WaitingVotePage';
 /*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
 
 export function ContestPage (props) {
@@ -61,7 +62,8 @@ infos.map((info, i) => {
                 ></YearContests>
             })
         } */}
-                <SubmitRequestPage></SubmitRequestPage>
+                {/* <SubmitRequestPage></SubmitRequestPage> */}
+                <WaitingVotePage></WaitingVotePage>
         <YearContests infos={infos.year}></YearContests>
 
     </div>)
