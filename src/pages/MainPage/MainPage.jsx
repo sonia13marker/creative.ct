@@ -33,8 +33,7 @@ export function MainPage () {
 */}
 
         {/*подключение контента под меню (шапкой) */}
-        {/* <MainContent /> */}
-        <SubmitRequest></SubmitRequest>
+        <MainContent />
         
 
     </div>

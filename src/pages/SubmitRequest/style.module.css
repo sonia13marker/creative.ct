@@ -1,5 +1,4 @@
 .wrapper {
-
 }
 
 .wrapper__timer {
@@ -28,6 +27,7 @@
 }
 
 label {
+    display: contents;
     font-family: 'Ruda', sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -36,7 +36,7 @@ label {
 
 .input_textarea {
     margin-top: 20px;
-    width: 490px;
+    width: 30.5rem;
     height: 290px;
     padding: 0.5rem;
     background-color: var(--main-white);
@@ -221,4 +221,90 @@ span > .input_file {
     transform: translateX(var(--end));
   }
 }
+/*заканчиваются стили для кнопки*/
 
+/*медиа-запросы*/
+
+@media screen and (max-width:1024px) {
+    label {
+        font-size: 20px;
+    }
+    .btn_23 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .form__wrp {
+        width: 95vw;
+        column-gap: 20px;
+    }
+    
+}
+@media screen and (max-width: 920px) {
+    .form__wrp {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 65vw;
+        row-gap: 20px;
+        grid-auto-flow: dense;
+}
+    .span_inputs {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .input_link {
+        margin-bottom: 40px;
+    }
+    .btn_23 {
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    label, .input__annotation, .btn_23 {
+        font-size: 18px;
+    }
+    .input_file, .input_link {
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 530px) {
+    .input_textarea {
+        width: 410px;
+    }
+    
+}
+@media screen and (max-width: 420px) {
+    .input_link,  .input_textarea, .input__annotation{
+        width: 350px;
+    }
+    .span_inputs span {
+        width: 240px;
+    }
+    
+}
+@media screen and (max-width: 380px) {
+    .input_link,  .input_textarea, .input__annotation{
+        width: 320px;
+        font-size: 15px;
+    }
+    .span_inputs span {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .input_link,  .input_textarea, .input__annotation{
+        width: 285px;
+        font-size: 15px;
+    }
+    .span_inputs span {
+        width: 210px;
+    }
+    label, .btn_23 {
+        font-size: 17px;
+    }
+}
