@@ -6,6 +6,7 @@ import { YearContests } from '../../components/YearContests/YearContests';
 import infos from '../../constants/mock.json';
 import { SubmitRequestPage } from '../SubmitRequestPage/SubmitRequestPage';
 import { WaitingVotePage } from '../WaitingVotePage/WaitingVotePage';
+import { VotePage } from '../VotePage/VotePage';
 /*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
 
 export function ContestPage (props) {
@@ -63,7 +64,8 @@ infos.map((info, i) => {
             })
         } */}
                 {/* <SubmitRequestPage></SubmitRequestPage> */}
-                <WaitingVotePage></WaitingVotePage>
+                {/* <WaitingVotePage></WaitingVotePage> */}
+                <VotePage></VotePage>
         <YearContests infos={infos.year}></YearContests>
 
     </div>)

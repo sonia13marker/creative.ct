@@ -1,0 +1,46 @@
+.wrapper {
+    width: 100vw;
+}
+
+.grid__project {
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 2rem minmax(9rem, 24rem) 4rem 27rem 5rem;
+    row-gap: 1.5rem;
+    border: 1.5px solid var(--main-black);
+    padding: 90px 85px;
+
+}
+
+.project__name, .project__description, .project__link {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: var(--main-black);
+    /* display: block; */
+}
+
+.project__name {
+    /* padding-bottom: 25px; */
+
+}
+
+.project__description {
+    width: 31rem;
+    height: auto;
+    /* padding-bottom: 25px; */
+    /* max-height: 300px; */
+}
+
+.project__link {
+
+}
+
+.project__link > a{
+    padding-left: 5px;
+}
+
+.project__img {
+
+}
