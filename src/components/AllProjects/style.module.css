@@ -5,6 +5,7 @@
 }
 
 .container__header {
+    margin-top: 150px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -30,41 +31,4 @@
     /* grid-auto-rows: auto; */
 }
 
-.grid__project {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 720px;
-    border: 1.5px solid var(--main-black);
-
-}
-
-.project__name, .project__description, .project__link {
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 29px;
-    color: var(--main-black);
-    /* display: block; */
-}
-
-.project__name {
-
-}
-
-.project__description {
-    width: 31rem;
-}
-
-.project__link {
-
-}
-
-.project__link > a{
-    padding-left: 5px;
-}
-
-.project__img {
-
-}
 
