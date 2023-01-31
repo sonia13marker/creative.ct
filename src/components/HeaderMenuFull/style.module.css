@@ -49,16 +49,29 @@
     margin-left: 5%;
 }
 .nav__link {
-    text-decoration: none;
     font-family: 'Sintony', sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: var(--main-black);
     padding-right: 80px;
+    display: block;
+    text-decoration: none;
+    position: relative;
 }
-/*эффект при наведении*/
-.nav__link:hover {
-
+.nav__link::after {
+    content: "";
+    background: #FFDB4D;
+    mix-blend-mode: multiply;
+    width: 58%;
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    color: var(--main-black);
+}
+.nav__link:hover::after{
+	height: 70%;
 }
 
 .nav__span {
@@ -79,11 +92,20 @@
     height: auto;
     background-color: var(--main-yel);
     border: none;
-    border-bottom: 1px solid var(--main-black);
+}
+.span__btn::after {
+    content: "";
+    display: block;
+    padding-top: 5px;
+    border-bottom: 1px solid #000;
 }
 .span__btn:hover {
-    opacity: 0.7;
     cursor: pointer;
+    background-color: #000;
+    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.btn__t:hover {
+    color: var(--main-yel);
 }
 
 .btn__t {
