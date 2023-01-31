@@ -26,3 +26,36 @@
 .project__btn:active {
 
 }
+.content__h2 {
+    font-family: 'Sintony', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--main-black);
+    padding: 20px 15px 5px;
+}
+.content__text {
+    font-family: 'Sintony', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--main-black);
+    padding: 0 15px 25px;
+}
+.content__text > span {
+    color: var(--main-yel);
+}
+.content__btn {
+    background-color: var(--main-yel);
+    width: 200px;
+    height: 50px;
+    margin: 0 15px 25px;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    border: none;
+}
+.content__btn:hover {
+    cursor: pointer;
+}

@@ -18,7 +18,7 @@ export function DetailOneProject ({name, description, project_link}) {
 
                 <img src={plug} className={style.project__img} alt="project photo"/>
                 
-                <ProjectVoteButton/>
+                <ProjectVoteButton />
                 </div>
 
 
