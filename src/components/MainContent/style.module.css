@@ -96,8 +96,67 @@
     align-items: center;
     overflow: hidden;
     background-color: var(--main-black);
+    position: relative;
+    color: #fff;
+    white-space: nowrap;
+    word-spacing: 20px;
+    font-size: 30px;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.marquee_container span {
+display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+.marquee_container .marquee {
+    --spacing: 17em;
+    --start: 0em;
+    --end: 60em;
+    -webkit-animation: marquee 50s linear infinite;
+    animation: marquee 50s linear infinite;
+    /* -webkit-animation-play-state: paused;
+    animation-play-state: paused; */
+    opacity: 0;
+    position: relative;
+    text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
+     #fff calc(var(--spacing) * -2) 0;
+  }
 
+  .marquee_container .marquee {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    opacity: 1;
+  }
+  .marquee_container .text {
+    opacity: 0;
+  }
+  .marquee_container:active {
+      background-color: #FFDB4D;
+      color: #fff;
+      border: 1.5px solid #000;
+  }
+  @-webkit-keyframes marquee {
+    0% {
+      transform: translateX(var(--start));
+    }
+    to {
+      transform: translateX(var(--end));
+    }
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(var(--start));
+    }
+    to {
+      transform: translateX(var(--end));
+    }
+  }
+/* 
 .marquee {
     font-size: 30px;
     line-height: 1.3;
@@ -119,7 +178,10 @@
     100% { 
         transform: translateX(50%)
     }
-}
+} */
+
+
+
 
 /*стили для кнопки*/
 .main__btn,

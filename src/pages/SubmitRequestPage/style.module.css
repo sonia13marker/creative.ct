@@ -180,39 +180,12 @@ label {
     border: 1.5px solid #000;
     cursor: pointer; 
 }
-/* #form__input_file {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 1;
-} */
 .input_file {
     position: absolute;
     top: 210px;
     left: 9vw;
     z-index: 1;
 }
-/* span > .input_file {
-} */
-/* .span_inputs span:focus {
-    border: 1px solid #FFDB4D;
-    outline: none;
-} */
-
-
-/* .span_inputs span:hover {
-    cursor: pointer;
-    background-color: #fff;
-    color: #FFDB4D;
-    transition: .1s color;
-}
-.span_inputs span:active {
-    background-color: #FFDB4D;
-    color: #fff;
-    border: 1.5px solid #000;
-    cursor: pointer;
-} */
-
 
 .input__annotation {
     font-family: 'Ruda', sans-serif;
@@ -266,7 +239,7 @@ label {
   display: none;
 }
 .btn_23 {
-    margin-top: 35px;
+  margin-top: 35px;
   overflow: hidden;
   padding: 0.8rem 3rem;
   position: relative;
