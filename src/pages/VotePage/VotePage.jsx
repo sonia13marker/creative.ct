@@ -4,9 +4,11 @@ import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import Countdown from 'react-countdown';
 import { AllProjects } from '../../components/AllProjects/AllProjects';
+import { Footer } from '../../components/Footer/Footer';
+import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 
 export function VotePage () { 
-    return (<div>
+    return (<div className={style.wp}>
         <MediaQuery minWidth={700}>
             <HeaderMenuFull />
         </MediaQuery>
@@ -32,6 +34,13 @@ export function VotePage () {
 
         {/*основная часть - сетка с проектами */}
         <AllProjects></AllProjects>
+
+        <MediaQuery minWidth={576}>
+            <Footer/>
+        </MediaQuery>
+        <MediaQuery maxWidth={575}> 
+            <FooterSmall />
+        </MediaQuery>
 
     </div>)
 }

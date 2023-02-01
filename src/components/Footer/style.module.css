@@ -35,6 +35,10 @@
     color: var(--main-white);
     padding-left: 5rem;
 }
+.content__link:hover {
+    color: var(--main-yel);
+    transition: .3s;
+}
 
 .content__btn {
     background-color: var(--main-black);
@@ -44,12 +48,26 @@
     font-weight: 700;
     font-size: 15px;
     color: var(--main-white);
-    border-bottom: 2px solid var(--main-white);
+    border-bottom: 1px solid var(--main-white);
     margin-right: 4.5rem;
+}
+.content__btn::after {
+    content: "";
+    display: block;
+    padding-top: 5px;
+    border-bottom: 1px solid var(--main-white);
+}
+
+.content__btn:hover::after {
+    border-bottom: 1px solid var(--main-yel);
 }
 
 .content__btn:hover {
     cursor: pointer;
+    color: #000;
+    background-color: var(--main-yel);
+    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-bottom: 1px solid var(--main-yel);
 }
 
 @media screen and (max-width: 1024px) {
