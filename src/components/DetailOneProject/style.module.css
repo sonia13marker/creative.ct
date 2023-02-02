@@ -69,6 +69,7 @@
 @media screen and (max-width: 503px) {
     .project__description {
         width: 27rem;
+        line-height: normal;
     }
 }
  
@@ -80,7 +81,7 @@
         width: 19rem;
     }
     .project__wrapper {
-        grid-template-rows: 2rem 13rem 2.5rem 15rem 6rem;
+        grid-template-rows: 2rem 8rem 2.5rem 15rem 6rem;
     }
 }
 @media screen and (max-width: 370px) {
