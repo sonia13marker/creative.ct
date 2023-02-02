@@ -8,6 +8,7 @@ import { Footer } from '../../components/Footer/Footer';
 import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 
 export function VotePage () { 
+
     return (<div className={style.wp}>
         <MediaQuery minWidth={700}>
             <HeaderMenuFull />
@@ -34,6 +35,8 @@ export function VotePage () {
 
         {/*основная часть - сетка с проектами */}
         <AllProjects></AllProjects>
+        
+
 
         <MediaQuery minWidth={576}>
             <Footer/>

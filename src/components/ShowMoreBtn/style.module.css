@@ -1,0 +1,28 @@
+.btn__wrappper {
+    width: 100vw;
+    height: 90px;
+    background-color: var(--main-yel);
+    border: 1px solid var(--main-black);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+.btn__text {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: var(--main-black);
+}
+.btn__text > img {
+    margin-left: 10px;
+}
+.btn__wrappper:hover {
+    cursor: pointer;
+}
+.btn__wrappper:active {
+    background-color: #ffd83d;
+}

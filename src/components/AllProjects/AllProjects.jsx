@@ -1,6 +1,7 @@
 
 import style from './style.module.css';
 import { OneProject } from '../OneProject/OneProject';
+import { ShowMoreBtn } from '../ShowMoreBtn/ShowMoreBtn';
 
 
 export function AllProjects () {
@@ -24,12 +25,25 @@ export function AllProjects () {
             "description" : "Дом, купить дом, частный дом, 0639468885, продажа домов, дома в области, недорогие дома, проекты домов, купля дома, дом в районе, купить дом в области, дома без посредников, жилой дом, дом в харькове, строительство домов, купить дом в районе, большой Дом, купить дом, частный дом, 0639468885, продажа домов, дома в обла",
             "project_link" : "https://cto-to-silkigeojfod.net"
         },
-        // {
-        //"id" : "04",
-        //     "name" : "@43foew_12",
-        //     "description" : "Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi, blanditiis sint corrupti nam aliquam quaerat aliquid magnam dolores eos neque vitae, aliquid magnam dolores eos neque vitae",
-        //     "project_link" : "https://lkigeojfod.net"
-        // }
+        {
+            "id" : "04",
+            "name" : "@43foew_12",
+            "description" : "Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi, blanditiis sint corrupti nam aliquam quaerat aliquid magnam dolores eos neque vitae, aliquid magnam dolores eos neque vitae",
+            "project_link" : "https://lkigeojfod.net"
+        },
+        {
+            "id" : "05",
+            "name" : "@43foew_12",
+            "description" : "Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о ",
+            "project_link" : "https://lkigeojfod.net"
+
+        },
+        {
+            "id" : "06",
+            "name" : "@43foew_12",
+            "description" : "Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о омов, купля дома, дом в районе, купить дом в области, дома без посредников, жилой дом, дом в харькове, строительство домов, купить дом в районе, большой Дом, купить",
+            "project_link" : "https://lkigeodide__835od.net"
+        }
     ]
 
     return (<div>
@@ -43,7 +57,10 @@ export function AllProjects () {
 
                 <div>
                     {/*попробовать сделать - если символов больше чем 270, то текст урезать и в конец добавлять "..."*/}
+
+                    
                     <OneProject infos={infos}/>
+                    <ShowMoreBtn/>
                 </div>
 
         </div>

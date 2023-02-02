@@ -11,7 +11,7 @@ export function MainContent () {
              <span className={style.main__yel}></span>
              <h2 className={style.main__h2}>твое творческое</h2>
              <h2 className={style.main__h2}>состязание</h2>
-             <button className={style.main__btn}>Подать заявку <span className={style.btn__arr}></span><img src={arrow} alt='arrow'/></button>
+             <button className={style.main__btn}>Продолжить <span className={style.btn__arr}></span><img src={arrow} alt='arrow'/></button>
          </div>
          <hr className={style.main__line}></hr>
      </div> 
