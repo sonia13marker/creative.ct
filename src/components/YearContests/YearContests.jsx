@@ -2,16 +2,27 @@ import { OneYearContest } from '../OneYearContest/OneYearContest';
 import style from './style.module.css';
 
 /*тут отображение всех конкурсов за один год */
-export function YearContests (props) {
-console.log(props.year);
+export function YearContests ({informations}) {
+console.log(informations)
     return (<>
         {/*контейнер для одинаковых отступов от краев*/}
         <div className={style.container}>
 
             {/*контейнер с годом и стрелкой списка */}
-            {/* <div className={style.container__year}>
-                {data.year || "Еще ничего не было:("}
-            </div> */}
+            <div className={style.container__year}>
+                {
+                    informations.map((year) => (
+                         <p>{year}</p>
+                    ))
+                }
+            {/* {informations.map((info, i) => (
+                    <section key={i}  className={style.grid__project}>
+                    <DetailOneProject {...info} />
+                    </section>
+                 ))} */}
+
+                {informations.year || "Еще ничего не было:("}
+            </div>
         {/* {
             contents.map((content, i) => {
                 <OneYearContest key={i} {...infos.content}/>
@@ -19,9 +30,9 @@ console.log(props.year);
 
         } */}
             {/*контейнер с годом и стрелкой списка */}
-            {/* <div className={style.container__year}>
+            <div className={style.container__year}>
 
-            </div> */}
+            </div>
 
             <div>
                 {/* {

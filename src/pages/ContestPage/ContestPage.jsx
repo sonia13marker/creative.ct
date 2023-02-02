@@ -3,10 +3,12 @@ import MediaQuery from 'react-responsive';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { YearContests } from '../../components/YearContests/YearContests';
-import infos from '../../constants/mock.json';
+import informations from '../../constants/mock.json';
 import { SubmitRequestPage } from '../SubmitRequestPage/SubmitRequestPage';
 import { WaitingVotePage } from '../WaitingVotePage/WaitingVotePage';
 import { VotePage } from '../VotePage/VotePage';
+import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
+import { Footer } from '../../components/Footer/Footer';
 /*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
 
 export function ContestPage (props) {
@@ -57,7 +59,7 @@ export function ContestPage (props) {
 
         {/*тут будет инфа о всех конкурсах*/}
         {/* {
-infos.map((info, i) => {
+        informations.map((info, i) => {
                 <YearContests key={i}
                 year={info.year}
                 ></YearContests>
@@ -65,8 +67,15 @@ infos.map((info, i) => {
         } */}
                 {/* <SubmitRequestPage></SubmitRequestPage> */}
                 {/* <WaitingVotePage></WaitingVotePage> */}
-                <VotePage></VotePage>
-        <YearContests infos={infos.year}></YearContests>
+                {/* <VotePage></VotePage> */}
+        <YearContests informations={informations}></YearContests>
+
+        <MediaQuery minWidth={576}>
+            <Footer/>
+        </MediaQuery>
+        <MediaQuery maxWidth={575}> 
+            <FooterSmall />
+        </MediaQuery>
 
     </div>)
 }
