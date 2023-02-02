@@ -60,3 +60,22 @@
 .content__btn:hover {
     cursor: pointer;
 }
+@media screen and (max-width: 605px) {
+    .project__btn {
+        width: 27rem;
+    }  
+}
+
+@media screen and (max-width: 460px) {
+    .project__btn {
+        width: 19rem;
+        font-size: 15px;
+        height: 3.5rem;
+    }  
+}
+@media screen and (max-width: 370px) {
+    .project__btn {
+        width: 17rem;
+    }
+    
+}
