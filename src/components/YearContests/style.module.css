@@ -1,0 +1,34 @@
+.container {
+    width: 100vw;
+    background-color: var(--main-yel);
+    border: 1.5px solid var(--main-black);
+    border-left: none;
+    border-right: none;
+}
+
+.container__year {
+    width: 100%;
+    padding: 50px 90px;
+}
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year__h2 {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+    color: var(--main-black);
+}
+
+.year__arrow_top {
+
+}
+.year__arrow_bottom {
+
+}
+

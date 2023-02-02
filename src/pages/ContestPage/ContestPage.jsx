@@ -11,7 +11,7 @@ import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 import { Footer } from '../../components/Footer/Footer';
 /*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
 
-export function ContestPage (props) {
+export function ContestPage () {
     // var information = [
     //     {
     //         "id": 1,
@@ -48,6 +48,7 @@ export function ContestPage (props) {
     // }
     
     // } 
+    console.log(informations)
     return (<div className={style.wr}>
 
         <MediaQuery minWidth={700}>
@@ -58,17 +59,30 @@ export function ContestPage (props) {
         </MediaQuery>
 
         {/*тут будет инфа о всех конкурсах*/}
-        {/* {
-        informations.map((info, i) => {
-                <YearContests key={i}
-                year={info.year}
-                ></YearContests>
+        <div className={style.container}>
+            <h2 className={style.container__h2}>Конкурсы</h2>
+            {
+            Object.values(informations).map((info ,id)=>{      
+                return Object.values(info).map((inf, di)=>{
+                    console.log(inf);
+                    return (<YearContests key={di} inf={inf}>
+                        <h2>{inf}</h2>
+                    </YearContests>)
+                    
+                })
             })
-        } */}
+        }
+        </div>
+        {/* {informations.map((information, id) => (
+                    <section key={id}>
+                    <YearContests {...information} />
+                    </section>
+                 ))} */}
+
                 {/* <SubmitRequestPage></SubmitRequestPage> */}
                 {/* <WaitingVotePage></WaitingVotePage> */}
                 {/* <VotePage></VotePage> */}
-        <YearContests informations={informations}></YearContests>
+        
 
         <MediaQuery minWidth={576}>
             <Footer/>
