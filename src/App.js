@@ -15,7 +15,7 @@ export const App = () => {
       <Routes>
         <Route path="creative.ct/" element={<MainPage/>}/>
         <Route path="/rules" element={<RulesPage/>}/>
-        <Route path="/contests" element={<ContestPage infos={infos}/>}/>
+        <Route path="/contests" element={<ContestPage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/submit" element={<SubmitRequestPage/>}/>
       </Routes>
