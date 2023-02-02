@@ -31,5 +31,54 @@
     /* grid-auto-rows: auto; */
 }
 
+@media screen and (max-width: 1280px) {
+    .header__h2 {
+        padding: 105px 75px;
+    }    
+}
 
+@media screen and (max-width: 1030px) {
+    .header__h2 {
+        font-size: 40px;
+        padding: 80px 65px;
+    }    
+}
 
+@media screen and (max-width: 910px) {
+    .header__h2 {
+        font-size: 30px;
+        padding: 70px 65px;
+    }    
+}
+
+@media screen and (max-width: 810px) {
+    .header__h2 {
+        font-size: 27px;
+        padding: 65px ;
+    }    
+}
+
+@media screen and (max-width: 720px) {
+    .header__h2 {
+        padding: 40px 35px ;
+    }    
+}
+@media screen and (max-width: 500px) {
+    .header__h2 {
+        padding: 30px 25px;
+        font-size: 22px;
+    }    
+}
+@media screen and (max-width: 390px) {
+    .header__h2 {
+        padding: 20px;
+        font-size: 20px;
+    }    
+}
+
+@media screen and (max-width: 340px) {
+    .header__h2 {
+        padding: 10px 15px;
+        font-size: 18px;
+    }    
+}
