@@ -1,0 +1,39 @@
+.date__btn {
+    display: block;
+    padding: 20px 55px;
+    margin: 50px 0 60px;
+    width: 215px;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: var(--main-black);
+    background-color: var(--main-white);
+    border: 1.5px solid var(--main-black);
+}
+.date__btn:active {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1200px) {
+    .date__btn {
+        padding: 20px 48px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 860px) {
+    .date__btn {
+        padding: 18px 40px;
+        width: auto;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+
+    .date__btn {
+        padding: 15px 35px;
+        width: auto;
+        font-size: 18px;
+    }
+}

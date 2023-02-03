@@ -81,19 +81,10 @@
     .info__name {
         font-size: 35px;
     }
-    .date__btn {
-        padding: 20px 48px;
-        width: auto;
-    }
 }
 @media screen and (max-width: 860px) {
     .info__name {
         font-size: 32px;
-    }
-    .date__btn {
-        padding: 18px 40px;
-        width: auto;
-        font-size: 20px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -123,11 +114,6 @@
 @media screen and (max-width: 410px) {
     .info__name {
         font-size: 30px;
-    }
-    .date__btn {
-        padding: 15px 35px;
-        width: auto;
-        font-size: 18px;
     }
     .info__name::after {
         margin: 10px 0;

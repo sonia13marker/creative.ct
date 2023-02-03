@@ -1,5 +1,7 @@
 import style from './style.module.css';
 import arrow_top from '../../images/arrow__list_top.svg'
+import { Link } from 'react-router-dom';
+import { GoBtn } from '../GoBtn/GoBtn';
 
 /*тут отображение деталей одного конкурса за определенный год */
 export function OneYearContest ({name, status, date}) {
@@ -18,7 +20,8 @@ export function OneYearContest ({name, status, date}) {
 
         {/*нижняя полоска с кнопкой и датой проведения */}
         <div className={style.container__date}>
-            <a href="" className={style.date__btn}>Перейти</a>
+            {/* <Link to="" className={style.date__btn}>Перейти</Link> */}
+            <GoBtn status={status}/>
             <p className={style.date}>{date}</p>
         </div>
     {/*конец инфы в виде блоков */}  
