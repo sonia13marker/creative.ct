@@ -1,20 +1,15 @@
 .container {
-    width: 100vw;
-    background-color: var(--main-yel);
-    border: 1.5px solid var(--main-black);
-    border-left: none;
-    border-right: none;
+
 }
 
 .container__year {
-    width: 100%;
-    padding: 50px 90px;
+
 }
 .layout {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 .year__h2 {

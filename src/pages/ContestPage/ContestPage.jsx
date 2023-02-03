@@ -61,17 +61,18 @@ export function ContestPage () {
         {/*тут будет инфа о всех конкурсах*/}
         <div className={style.container}>
             <h2 className={style.container__h2}>Конкурсы</h2>
+            <div className={style.prikol}>
             {
             Object.values(informations).map((info ,id)=>{      
-                return Object.values(info).map((inf, di)=>{
+                return (Object.values(info).map((inf, di)=>{
                     console.log(inf);
-                    return (<YearContests key={di} inf={inf}>
-                        <h2>{inf}</h2>
-                    </YearContests>)
+                    <p>{inf}</p>
+                    return (<YearContests key={di} inf={inf}></YearContests>)
                     
                 })
-            })
+            )})
         }
+        </div>
         </div>
         {/* {informations.map((information, id) => (
                     <section key={id}>
