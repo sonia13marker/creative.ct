@@ -4,12 +4,13 @@
     border: 1.5px solid var(--main-black);
     border-left: none;
     border-right: none;
-    margin: 100px 0;
     padding: 50px 90px;
+}
+.preekol:last-child {
+    margin-bottom: 300px;
 }
 .arrow_wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
 }
