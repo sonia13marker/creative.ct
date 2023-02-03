@@ -8,10 +8,10 @@ export const Menu = ({active, setActive}) => {
             <div className={style.menu__content} onClick={e => e.stopPropagation()}>
 
                 <ul className={style.one_ul}>
-                    <li><Link to="/#">Главная</Link></li>
-                    <li><Link to="/#">Правила</Link></li>
-                    <li><Link tof="/#">Конкурсы</Link></li>
-                    <li><Link to="/#">О проекте</Link></li>
+                    <li><Link to="/creative.ct">Главная</Link></li>
+                    <li><Link to="/rules">Правила</Link></li>
+                    <li><Link tof="/contests">Конкурсы</Link></li>
+                    <li><Link to="/about">О проекте</Link></li>
                     <li><Link to="/#">Войти в аккаунт</Link></li>
                 </ul>
             </div>
