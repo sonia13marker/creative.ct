@@ -11,8 +11,8 @@ console.log(inf)
 
 
             {/*контейнер с годом и стрелкой списка */}
-            <section className={style.container__year}>
-                <span className={style.layout}>
+            <section>
+                <span>
 
                     <h2 className={style.year__h2}>
                     {Object.values(inf).map((innf, ids) => {

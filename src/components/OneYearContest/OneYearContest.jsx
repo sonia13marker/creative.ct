@@ -12,7 +12,7 @@ export function OneYearContest ({name, status, date}) {
         {/*верхняя полоска с названием и статусом конкурса */}
         <div className={style.info}>
             <h2 className={style.info__name}>{name}</h2>
-            {/* <hr/> */} <span className={style.line}></span>
+            <span className={style.line}></span>
             <h4 className={style.info__status}>{status}</h4>
         </div>
 

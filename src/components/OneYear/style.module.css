@@ -21,3 +21,53 @@
 .arrow_wrap p {
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+
+    .arrow_wrap img {
+        width: 45px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .preekol {
+        padding: 50px 70px;
+    }
+    
+}
+@media screen and (max-width: 730px) {
+    .preekol {
+        padding: 50px;
+    }
+    .arrow_wrap img {
+        width: 35px;
+        height: 22px;
+    }
+    
+}
+@media screen and (max-width: 640px) {
+    .preekol {
+        padding: 50px 40px;
+    }
+
+    
+}
+@media screen and (max-width: 560px) {
+    .preekol {
+        padding: 50px 25px;
+    } 
+}
+@media screen and (max-width: 500px) {
+    .preekol {
+        padding: 50px 20px;
+    } 
+}
+@media screen and (max-width: 410px) {
+    .preekol {
+        padding: 50px 15px;
+    } 
+    .arrow_wrap img {
+        width: 30px;
+        height: 20px;
+    }
+}

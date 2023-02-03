@@ -8,13 +8,7 @@ import classnames from "classnames";
 
 export function OneYear(innf){
     console.log(innf);
-    const nowYear = new Date('February 03, 2023');
-    console.log(nowYear);
-
-    let fullYear = nowYear.getFullYear();
-    console.log(fullYear)
-
-
+    
     const [isActive, setIsActive] = useState(false);
     
     return <div className={style.preekol}>

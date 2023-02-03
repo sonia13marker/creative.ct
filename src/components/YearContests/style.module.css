@@ -1,16 +1,3 @@
-.container {
-
-}
-
-.container__year {
-
-}
-.layout {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
-}
 
 .year__h2 {
     font-family: 'Sintony', sans-serif;
@@ -20,10 +7,24 @@
     color: var(--main-black);
 }
 
-.year__arrow_top {
-
+@media screen and (max-width: 1200px) {
+    .year__h2 {
+        font-size: 40px;
+    }  
 }
-.year__arrow_bottom {
 
+@media screen and (max-width: 860px) {
+    .year__h2 {
+        font-size: 35px;
+    }
+    
 }
+
+@media screen and (max-width: 340px) {
+    .year__h2 {
+        font-size: 30px;
+    }
+    
+}
+
 
