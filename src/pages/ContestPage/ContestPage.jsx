@@ -12,42 +12,7 @@ import { Footer } from '../../components/Footer/Footer';
 /*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
 
 export function ContestPage () {
-    // var information = [
-    //     {
-    //         "id": 1,
-    //         "year": 2023,
-    //         "name": "Django",
-    //         "status": "Идет подача заявок",
-    //         "date": "01.01.-20.01"
-    //     },
-    //     {
-    //         "id": 2,
-    //         "year": 2023,
-    //         "name": "Django",
-    //         "status": "Ожидание голосования",
-    //         "date": "18.01.-31.01"
-    //     },
-    //     {
-    //         "id": 3,
-    //         "year": 2023,
-    //         "name": "Frontend",
-    //         "status": "Голосование",
-    //         "date": "01.02.-15.02"
-    //     },
-    //     {
-    //         "id": 4,
-    //         "year": 2023,
-    //         "name": "Frontend",
-    //         "status": "Завершен",
-    //         "date": "13.01.-15.01"
-    //     }
-    // ]
-    // { for (var i = 0; i < information.length; i++) {
-    //     var obj = information[i];
-    //     console.log(`Name: ${obj.name}, ${obj.status}`)
-    // }
-    
-    // } 
+
     console.log(informations)
     return (<div className={style.wr}>
 
@@ -73,15 +38,6 @@ export function ContestPage () {
         }
         </div>
         </div>
-        {/* {informations.map((information, id) => (
-                    <section key={id}>
-                    <YearContests {...information} />
-                    </section>
-                 ))} */}
-
-                {/* <SubmitRequestPage></SubmitRequestPage> */}
-                {/* <WaitingVotePage></WaitingVotePage> */}
-                {/* <VotePage></VotePage> */}
         
 
         <MediaQuery minWidth={576}>

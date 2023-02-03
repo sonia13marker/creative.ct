@@ -6,6 +6,7 @@ import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
 import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { Footer } from '../../components/Footer/Footer';
 import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
+import { ResultsPage } from '../ResultsPage/ResultsPage'; 
 
 export function AboutPage () {
     return (<div className={style.wr}>
@@ -57,6 +58,8 @@ export function AboutPage () {
         <MediaQuery maxWidth={575}> 
             <FooterSmall />
         </MediaQuery>
+{/* 
+        <ResultsPage></ResultsPage> */}
     </div>
 
     )
