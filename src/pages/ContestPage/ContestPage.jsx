@@ -66,7 +66,6 @@ export function ContestPage () {
             Object.values(informations).map((info ,id)=>{      
                 return (Object.values(info).map((inf, di)=>{
                     console.log(inf);
-                    <p>{inf}</p>
                     return (<YearContests key={di} inf={inf}></YearContests>)
                     
                 })

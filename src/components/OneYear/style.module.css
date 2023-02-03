@@ -1,10 +1,13 @@
 .preekol {
     width: 100vw;
-    background-color: var(--main-yel);
+    background-color: var(--main-white);
     border: 1.5px solid var(--main-black);
     border-left: none;
     border-right: none;
     padding: 50px 90px;
+}
+.preekol:first-child {
+    background-color: var(--main-yel);
 }
 .preekol:last-child {
     margin-bottom: 300px;
@@ -13,4 +16,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.arrow_wrap img:hover, 
+.arrow_wrap p {
+    cursor: pointer;
 }
