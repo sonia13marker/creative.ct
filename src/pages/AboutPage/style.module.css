@@ -6,8 +6,6 @@
 }
 .wr {
     overflow-x: hidden;
-    /* width: 100vw;
-    height: auto; */
 }
 
 .wrapper {
@@ -98,8 +96,8 @@
 }
  
 .media__links > a {
-    text-decoration: none;
     color: #555;
+
 
 }
 @media screen and (max-width:1435px) {
@@ -263,9 +261,13 @@
     .section_text {
         width: 85%;
         margin-left: 3rem;
+        padding-left: 0;
     }
     .members {
         padding-left: 3rem;
+    }
+    .text__h2 {
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 530px) {
@@ -311,6 +313,9 @@
     .members__post {
         margin-bottom: 30px;
     }
+    .text__h2 {
+        font-size: 28px;
+    }
  
 }
 @media screen and (max-width: 440px) {
@@ -337,6 +342,9 @@
     .block__members {
         margin-bottom: 10rem;
     }
+    .text__h2 {
+        font-size: 25px;
+    }
     
 }
 @media screen and (max-width: 345px) {
@@ -348,6 +356,7 @@
 @media screen and (max-width: 330px) {
     .section_text {
         width: 75%;
+        padding-bottom: 2.5rem;
     }
     
 }

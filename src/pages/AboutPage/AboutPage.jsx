@@ -26,9 +26,9 @@ export function AboutPage () {
                         <span className={style.members__media}>
                             <h3 className={style.members__h3}>Руслан Галеев</h3>
                             <span className={style.members__post}>БЭкенд</span>
-                            <p className={style.media__links}><a href="https://t.me/Gruslans" target="blank">Telegram: @gruslan</a></p>
-                            <p className={style.media__links}><a href="https://github.com/GRusl" target="blank">GitHub: @GRusl</a></p>
-                            <p className={style.media__links}><a href="https://vk.com/galeev.ruslan" target="blank">VK: Руслан Галеев</a></p>
+                            <p className={style.media__links}>Telegram: <a href="https://t.me/Gruslans" target="blank">@gruslan</a></p>
+                            <p className={style.media__links}>GitHub: <a href="https://github.com/GRusl" target="blank">@GRusl</a></p>
+                            <p className={style.media__links}>VK: <a href="https://vk.com/galeev.ruslan" target="blank"> Руслан Галеев</a></p>
                         </span>
                     </span>
 
@@ -38,9 +38,9 @@ export function AboutPage () {
                         <span className={style.members__media}>
                             <h3 className={style.members__h3}>Софья Моисеева</h3>
                             <span className={style.members__post}>Фронтенд</span>
-                            <p className={style.media__links}><a href="https://t.me/username_marker" target="blank">Telegram: @marker</a></p>
-                            <p className={style.media__links}><a href="https://github.com/sonia13marker" target="blank">GitHub: @sonia13marker</a></p>
-                            <p className={style.media__links}><a href="https://vk.com/mmarkerr" target="blank">VK: Софья Маркер</a></p>
+                            <p className={style.media__links}>Telegram:<a href="https://t.me/username_marker" target="blank"> @marker</a></p>
+                            <p className={style.media__links}>GitHub: <a href="https://github.com/sonia13marker" target="blank">@sonia13marker</a></p>
+                            <p className={style.media__links}>VK: <a href="https://vk.com/mmarkerr" target="blank">Софья Маркер</a></p>
                         </span>
                     </span>
                 </div>
