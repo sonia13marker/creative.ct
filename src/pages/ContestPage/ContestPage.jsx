@@ -1,7 +1,6 @@
 import style from './style.module.css';
 import MediaQuery from 'react-responsive';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
-import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { YearContests } from '../../components/YearContests/YearContests';
 import informations from '../../constants/mock.json';
 import { SubmitRequestPage } from '../SubmitRequestPage/SubmitRequestPage';
@@ -16,12 +15,7 @@ export function ContestPage () {
     console.log(informations)
     return (<div className={style.wr}>
 
-        <MediaQuery minWidth={700}>
             <HeaderMenuFull />
-        </MediaQuery>
-        <MediaQuery maxWidth={699}> 
-            <MenuHamb/>
-        </MediaQuery>
 
         {/*тут будет инфа о всех конкурсах*/}
         <div className={style.container}>

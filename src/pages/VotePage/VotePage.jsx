@@ -1,7 +1,6 @@
 import style from './style.module.css';
 import MediaQuery from 'react-responsive';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
-import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import Countdown from 'react-countdown';
 import { AllProjects } from '../../components/AllProjects/AllProjects';
 import { Footer } from '../../components/Footer/Footer';
@@ -10,12 +9,8 @@ import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 export function VotePage () { 
 
     return (<div className={style.wp}>
-        <MediaQuery minWidth={700}>
+
             <HeaderMenuFull />
-        </MediaQuery>
-        <MediaQuery maxWidth={699}> 
-            <MenuHamb/>
-        </MediaQuery>
 
         {/* таймер*/}
         <section className={style.wrapper__timer}>

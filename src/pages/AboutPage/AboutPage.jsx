@@ -3,19 +3,15 @@ import ruslan from '../../images/ruslan_img.jpg';
 import sonya from '../../images/sonya_img.jpg';
 import MediaQuery from 'react-responsive';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
-import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { Footer } from '../../components/Footer/Footer';
 import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 import { ResultsPage } from '../ResultsPage/ResultsPage'; 
 
 export function AboutPage () {
     return (<div className={style.wr}>
-        <MediaQuery minWidth={700}>
+
             <HeaderMenuFull />
-        </MediaQuery>
-        <MediaQuery maxWidth={699}> 
-            <MenuHamb/>
-        </MediaQuery>
+
             <div className={style.wrapper}>
                 <section className={style.section_text}>
                     <h2 className={style.text__h2}>О проекте</h2>
