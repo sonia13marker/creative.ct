@@ -527,6 +527,7 @@ display: grid;
     .main {
         grid-template-columns: 1fr 4.5rem;
         height: 75vh;
+        overflow-y: hidden;
     }
     .leftBlock {
         display: flex;
@@ -572,7 +573,7 @@ display: grid;
         word-spacing: 10px;
     }
     .marquee {
-        padding: 20px 0;
+        padding: 8px 0;
     }
     
 }
