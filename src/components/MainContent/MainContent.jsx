@@ -19,18 +19,10 @@ export function MainContent () {
      
      <div className={style.rightBlock}></div>
     </main>
-    {/* <div className={style.marquee_container}>
-        <p className={style.marquee}>
-        ●    твое творческое состязание    ●    твое творческое состязание    ●    твое творческое состязание    ●    твое творческое состязание    ●
-        </p>
-        <p className={style.marquee_2}>
-        ●    твое творческое состязание    ● 
-        </p>
-    </div> */}
 
     <div className={style.marquee_container}>
-    <span className={style.text}>● твое творческое состязание ● твое творческое состязание ● твое творческое состязание</span>
-    <span className={style.marquee} aria-hidden>● твое творческое состязание </span>  
+    <span className={style.text}> ● твое творческое состязание ● твое творческое состязание ● твое творческое состязание </span>
+    <span className={style.marquee} aria-hidden> ● твое творческое состязание </span>  
     </div>
     </>}
 
