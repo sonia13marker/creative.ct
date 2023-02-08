@@ -43,6 +43,9 @@
         width: 35px;
         height: 22px;
     }
+    .arrow_wrap p {
+        font-size: 35px;
+    }
     
 }
 @media screen and (max-width: 640px) {
@@ -61,6 +64,9 @@
     .preekol {
         padding: 50px 20px;
     } 
+    .arrow_wrap p {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 410px) {
     .preekol {
@@ -69,5 +75,8 @@
     .arrow_wrap img {
         width: 30px;
         height: 20px;
+    }
+    .arrow_wrap p {
+        font-size: 25px;
     }
 }

@@ -87,12 +87,20 @@
         font-size: 32px;
     }
 }
+@media screen and (max-width: 580px) {
+    .info__status {
+        font-size: 18px;
+    }
+    
+}
+
 @media screen and (max-width: 500px) {
     .line {
         display: none;
     }
     .info__name {
         display: inline;
+        font-size: 28px;
     }
     .info__name::after {
         content: "";
@@ -107,13 +115,13 @@
         align-items: flex-start;
     }
     .info__status {
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 410px) {
     .info__name {
-        font-size: 30px;
+        font-size: 25px;
     }
     .info__name::after {
         margin: 10px 0;
@@ -121,6 +129,10 @@
     }
     .info__status {
         font-weight: 500;
+        font-size: 18px;
+    }
+    .date {
+        font-size: 18px;
     }
    
 }

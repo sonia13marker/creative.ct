@@ -6,8 +6,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 40px;
+  right: 35px;
 }
 .burger_btn {
   width: 30px;

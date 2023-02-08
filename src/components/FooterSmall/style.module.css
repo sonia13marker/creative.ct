@@ -62,26 +62,26 @@
 
 @media screen and (max-width: 435px) {
     .main_wrap { 
-        padding: 2rem 25vw;
+        padding: 3rem 25vw 1.5rem;
     }
     
 }
 @media screen and (max-width: 395px) {
     .main_wrap { 
-        padding: 2rem 23.5vw;
+        padding: 3rem 23.5vw 1.5rem;
     }
     
 }
 
 @media screen and (max-width: 355px) {
     .main_wrap { 
-        padding: 2rem 20vw;
+        padding: 3rem 20vw 1.5rem;
     }
     
 }
 @media screen and (max-width: 315px) {
     .main_wrap { 
-        padding: 2rem 18vw;
+        padding: 3rem 18vw 1.5rem;
     }
     
 }

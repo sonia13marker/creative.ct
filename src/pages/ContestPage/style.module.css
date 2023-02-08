@@ -24,20 +24,30 @@
 @media screen and (max-width: 700px) {
     .container__h2 {
         margin-left: 50px;
+        font-size: 35px;
     }
     
 }
 @media screen and (max-width: 500px) {
     .container__h2 {
+        font-size: 30px;
         margin-left: 20px;
+    }
+    
+}
+@media screen and (max-width: 410px) {
+    .container__h2 {
+        font-size: 25px;
+        margin: 70px 0 70px 20px;
     }
     
 }
 
 @media screen and (max-width: 325px) {
     .container__h2 {
-        margin: 80px 0 75px 15px;
-        font-size: 35px;
+        margin: 70px 0 70px 15px;
+        font-size: 25px;
     }
+    
     
 }
