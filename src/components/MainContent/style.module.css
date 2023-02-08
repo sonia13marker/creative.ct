@@ -574,7 +574,7 @@ display: grid;
         height: 100%;
     }
     .marquee {
-        padding: 8px 0;
+        padding: auto 0;
     }
     
 }
