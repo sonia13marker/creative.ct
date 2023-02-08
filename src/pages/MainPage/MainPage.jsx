@@ -19,12 +19,10 @@ export function MainPage () {
     return <div className={style.corpus}>
 
         
-        <MediaQuery minWidth={700}>
+        {/* <MediaQuery minWidth={700}> */}
             <HeaderMenuFull />
-        </MediaQuery>
-        <MediaQuery maxWidth={699}> 
-            <MenuHamb/>
-        </MediaQuery>
+        {/* </MediaQuery> */}
+
 
 {/*проба - не работает, тут пока просто ни-че-го
         <Mobile>

@@ -1,104 +1,56 @@
-.layer {
-  position: relative;
-}
-
-.wrap {
-  /* display: flex; */
-  /* display: grid; */
-  width: 100vw;
-  height: 110px;
-  background-color:var(--main-white);
-  border-bottom: 1.5px solid var(--main-black);
-}
-.wrap__nav {
-  height: 100%;
-  width: 100%;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between */
-  display: grid;
-  grid-template-columns: 7rem 1fr;
-  grid-template-rows: 1fr;
-}
-.nav__logo {
-  background: url(../../images/logo.svg) center center no-repeat;
-  width: 7rem;
-  border-right: 1.5px solid var(--main-black);
-  height: 110px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-}
 
 .container {
-  width: 300px;
-  height: 300px;
+
+  height: 30px;
   z-index: 1000;
-}
-
-.button_menu {
-  width: 50px;
-  height: 25px;
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 35px;
-  right: 55px;
+  top: 30px;
+  right: 30px;
+}
+.burger_btn {
+  width: 30px;
+  height: 20px;
+  margin-left: 20px;
+  position: relative;
   cursor: pointer;
-  z-index: 1001;
-  background-color: blueviolet;
 }
-
-.button_menu:before {
-  content: '';
+.burger_btn::before {
+content: "";
+position: absolute;
+top: 0;
+width: 30px;
+background-color: var(--main-yel);
+height: 3px;
+}
+.burger_btn span {
   position: absolute;
-  top: 0;
-  background-color: blue;
-  width: 40px;
-  height: 3px;
-  transition: transform .3s, width .3s;
+top: 9px;
+width: 30px;
+background-color: var(--main-white);
+border: 1px solid var(--main-black);
+height: 2px;
 }
-
-.button_menu span {
-  position: absolute;
-  top: 11px;
-  right: 10px;
-  background-color: blue;
-  width: 50px;
-  height: 3.5px;
-  transition: opacity .3s;
-}
-
-.button_menu:after {
-  content: '';
+.burger_btn::after {
+  content: "";
   position: absolute;
   bottom: 0;
-  left: 10px;
-  background-color: blue;
   width: 30px;
+  background-color: var(--main-yel);
   height: 3px;
-  transition: transform .3s, width .3s;
 }
+/* медиа запросы */
+@media screen and (max-width: 1024px) {
 
-.button_menu_active span {
-  opacity: 0;
-}
 
-.button_menu_active:before {
-  transform: rotate(45deg) translateY(16px);
-  width: 50px;
 }
+@media screen and (max-width: 1120px) {
 
-.button_menu_active:after {
-  left: 0;
-  transform: rotate(-45deg) translateY(-16px);
-  width: 50px;
 }
-@media screen and (max-width: 699px) {
-  .wrap__nav {
-      grid-template-columns: 13rem 1fr;
-  }
-  .nav__logo {
-      width: 13rem;
-  }
+@media screen and (max-width: 780px) {
+
+
   
 }
+

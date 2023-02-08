@@ -1,0 +1,129 @@
+.nav__logo {
+    background: url(../../images/logo.svg) center center no-repeat;
+    width: 13rem;
+    border-right: 1.5px solid var(--main-black);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__ul {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* .nav__ul:first-child {
+    margin-left: 25%;
+} */
+
+.nav__ul > li {
+    list-style-type: none;
+    width: auto;
+}
+.nav__ul > li:first-child {
+    margin-left: 5%;
+}
+.nav__link {
+    font-family: 'Sintony', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--main-black);
+    padding-right: 80px;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+.nav__link::after {
+    content: "";
+    background: #FFDB4D;
+    mix-blend-mode: multiply;
+    width: 58%;
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    color: var(--main-black);
+}
+.nav__link:hover::after{
+	height: 70%;
+}
+
+@media screen and (max-width: 1245px) {
+    .nav__link {
+    padding-right: 75px;
+}
+    
+}
+@media screen and (max-width: 1245px) {
+    .nav__link {
+    padding-right: 70px;
+}
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__logo {
+        width: 10.5rem;
+    }
+ 
+}
+@media screen and (max-width: 1213px) {
+    .nav__link {
+    padding-right: 65px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .nav__link {
+    padding-right: 60px;
+    }
+}
+@media screen and (max-width: 1182px) {
+    .nav__link {
+    padding-right: 55px;
+    }
+}
+@media screen and (max-width: 1166px) {
+    .nav__link {
+    font-size: 13px;
+    padding-right: 45px;
+    }
+}
+@media screen and (max-width: 1120px) {
+
+    .nav__logo {
+        background: url(../../images/logo2.svg) center center no-repeat;
+    }
+    .nav__ul {
+        justify-content: space-evenly;
+        margin-left: 2rem;
+    }
+
+}
+@media screen and (max-width: 965px) {
+    .nav__ul {
+        margin-left: 0;
+    }  
+}
+@media screen and (max-width: 932px) {
+    .nav__link {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .nav__link {
+        font-size: 12px;
+    }
+    .nav__logo {
+        background: url(../../images/logo2.svg) center center no-repeat;
+    }
+
+    
+}
+
+

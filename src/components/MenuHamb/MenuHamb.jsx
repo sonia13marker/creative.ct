@@ -6,24 +6,16 @@ import { MainContent } from '../MainContent/MainContent';
 
 export function MenuHamb () {
   const [menuActive, setMenuActive] = useState(false);
-    return(<div className={style.layer}>
-          <div className={style.wrap}>
-    <span className={style.wrap__nav}>
-        <span className={style.nav__logo} />
-        </span>
-    </div>
-    
+    return(<div >
+
     {/*меню гамбургер */}
-      {/* <div className={style.container}>
-          <div
-              className={
-                  classnames({[style.button_menu]: true, [style.button_menu_active]: menuActive})
-              }
-              onClick={() => setMenuActive(!menuActive)}>
-              <span/>
-          </div>
-          <Menu active={menuActive} setActive={setMenuActive}/>
-      </div> */}
+      <div className={style.container}>
+            <span></span>
+            <div className={style.burger_btn} onClick={() => setMenuActive(!menuActive)}>
+                <span/>
+            </div>
+      </div>
+      <Menu active={menuActive} setActive={setMenuActive}></Menu>
 
  </div> )
  
