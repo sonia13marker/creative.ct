@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 
 export function MainContent () {
-    return <><main className={style.main}>
+    return <>
+    <main className={style.main}>
     <div className={style.leftBlock}>
      <div className={style.main__alltext}>
              <div className={style.posit}><h1 className={style.main__h1}>Creative.CT - </h1></div>

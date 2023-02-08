@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .main {
     width: 100vw;
     background-color: var(--main-white);
@@ -526,8 +527,7 @@ display: grid;
 
     .main {
         grid-template-columns: 1fr 4.5rem;
-        height: 75vh;
-        overflow-y: hidden;
+        height: 80vh;
     }
     .leftBlock {
         display: flex;
@@ -550,8 +550,8 @@ display: grid;
     }
     .main__btn {
         font-size: 12px;
-        width: 160px;
-        height: 40px;
+        width: 180px;
+        height: 60px;
         margin-top: 30px;
     }
     .main__btn img {
@@ -571,6 +571,7 @@ display: grid;
     .marquee_container {
         align-items: flex-start;
         word-spacing: 10px;
+        height: 100%;
     }
     .marquee {
         padding: 8px 0;
