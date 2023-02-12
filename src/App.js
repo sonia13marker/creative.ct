@@ -22,7 +22,6 @@ export const App = () => {
         <Route path="/vote" element={<VotePage/>}/>
         <Route path="/waiting-vote" element={<WaitingVotePage/>}/>
         <Route path="/results" element={<ResultsPage/>}/>
-        <Route path="/vote" element={<VotePage/>}/>
       </Routes>
     </BrowserRouter>
 

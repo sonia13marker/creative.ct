@@ -1,23 +1,71 @@
 import style from './style.module.css';
 import { Link } from 'react-router-dom';
-//хз как сделать
 
-function renderSwitch(status) {
-    switch(status) {
-      case 'Завершен':
-        return <Link to='/results'></Link>;
-      case 'Идет подача заявок': 
-        return <Link to='/submit'></Link>;
-      case 'Голосование': 
-        return <Link to='/vote'></Link>;
-      case 'Ожидание голосования': 
-        return <Link to='/waiting-vote'></Link>;
-    }
+
+export function GoBtn (props) {
+  const statusInNumber = props.statusInNumber;
+
+  if (statusInNumber === 0) {
+    return <ToWaitingVoteBtn />;
+  } else 
+  if (statusInNumber === 1) {
+    return <ToSubmitBtn />;
+  } else 
+  if (statusInNumber === 3) {
+    return <ToVoteBtn />;
+  } else 
+  if (statusInNumber === 5) {
+    return <ToResultsBtn />;
   }
 
-export function GoBtn ({status}) {
-    console.log(status)
-    return <span>
-        <Link to={renderSwitch()} className={style.date__btn}>Перейти</Link>
+}
+
+// function renderLinks(status) {
+//     if (status === 0) {
+//       return <Link to="/waiting-vote"></Link>;
+//     } else 
+//     if (status === 1) {
+//       return <Link to="/submit"></Link>;
+//     } else 
+//     if (status === 3) {
+//       return <Link to="/vote"></Link>;
+//     } else 
+//     if (status === 5) {
+//       return <Link to="/results"></Link>;
+//     }
+//   }
+
+// export function GoBtn (props) {
+//   const status = props.status;
+//     return <span>
+//         <Link to={renderLinks()} className={style.date__btn}>Перейти</Link>
+//     </span>
+// }
+
+/*переход на страницу с ожиданием голосования*/
+function ToWaitingVoteBtn () {
+  return <span>
+    <Link to="/waiting-vote" className={style.date__btn}>Перейти</Link>
+    </span>
+}
+
+/*переход на страницу с подачей заявок*/
+function ToSubmitBtn () {
+  return <span>
+    <Link to="/submit" className={style.date__btn}>Перейти</Link>
+    </span>
+}
+
+/*переход на страницу голосования*/
+function ToVoteBtn () {
+  return <span>
+    <Link to="/vote" className={style.date__btn}>Перейти</Link>
+    </span>
+}
+
+/*переход на страницу с результатами*/
+function ToResultsBtn () {
+  return <span>
+    <Link to="/results" className={style.date__btn}>Перейти</Link>
     </span>
 }
