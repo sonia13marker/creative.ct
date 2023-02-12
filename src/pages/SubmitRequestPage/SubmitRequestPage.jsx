@@ -30,7 +30,7 @@ export function SubmitRequestPage () {
                             <input className={style.input_link} placeholder="https://example.com" name="project_link" id="form__input_link"/>
                         </label>
                         {/*это сделано для стилизации кнопки "добавить фото" */}
-                        <p>Прикрепи главную картинку проекта: </p>
+                        <p className={style.label__desc}>Прикрепи главную картинку проекта: </p>
                         <label for="form__input_file" className={style.button_label}>Add file</label>
                             <input type="file" className={style.input_file} name="photo" id="form__input_file"/>
                         

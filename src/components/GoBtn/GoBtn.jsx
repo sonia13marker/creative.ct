@@ -20,28 +20,6 @@ export function GoBtn (props) {
 
 }
 
-// function renderLinks(status) {
-//     if (status === 0) {
-//       return <Link to="/waiting-vote"></Link>;
-//     } else 
-//     if (status === 1) {
-//       return <Link to="/submit"></Link>;
-//     } else 
-//     if (status === 3) {
-//       return <Link to="/vote"></Link>;
-//     } else 
-//     if (status === 5) {
-//       return <Link to="/results"></Link>;
-//     }
-//   }
-
-// export function GoBtn (props) {
-//   const status = props.status;
-//     return <span>
-//         <Link to={renderLinks()} className={style.date__btn}>Перейти</Link>
-//     </span>
-// }
-
 /*переход на страницу с ожиданием голосования*/
 function ToWaitingVoteBtn () {
   return <span>

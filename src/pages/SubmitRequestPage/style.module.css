@@ -56,6 +56,7 @@ label {
 .span_inputs {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .input_link {
@@ -75,9 +76,7 @@ label {
     border: 1px solid #FFDB4D;
     outline: none;
 }
-.span_inputs { 
-    position: relative;
-}
+
 
 .button_label {
     margin-top: 20px;
@@ -127,6 +126,14 @@ label {
     color: var(--main-black);
     max-width: 445px;
     margin-top: 15px;
+}
+
+.label__desc {
+    display: contents;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--main-black);
 }
 
 /*стили для кнопки "отправить/подать"*/
@@ -340,31 +347,96 @@ label {
         left: 18vw;
     }
 } 
-
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 560px) {
+    .button_label {
+        width: 210px;
+    }
     .input_file {
         top: 200px;
-        left: 27.5vw;
+        left: 14vw;
     }
-} 
+}
+@media screen and (max-width: 500px) {
+    .button_label {
+        width: 210px;
+    }
+    .input_file {
+        top: 200px;
+        left: 16vw;
+    }
+    .button_label {
+        height: 45px;
+        font-size: 18px;
+    }
+    label {
+        font-size: 18px;
+    }
 
-@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 460px) {
+    .button_label {
+        width: 210px;
+    }
+    .input_file {
+        top: 200px;
+        left: 17vw;
+    }
+    label, .label__desc {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 430px) {
     .button_label {
         width: 200px;
     }
     .input_file {
         top: 200px;
-        left:16vw;
+        left: 15vw;
     }
-    
-}
-@media screen and (max-width: 340px) {
+    .input__annotation {
+        font-size: 15px;
+    }
+} 
+
+@media screen and (max-width: 400px) {
     .button_label {
         width: 180px;
     }
     .input_file {
         top: 200px;
-        left:13vw;
+        left:11.5vw;
+    }
+    
+}
+@media screen and (max-width: 380px) {
+    .button_label {
+        width: 170px;
+    }
+    .input_file {
+        left: 9.5vw;
+    }
+    
+}
+@media screen and (max-width: 340px) {
+    .input_file {
+        top: 187px;
+        left:10vw;
+    }
+    label, .label__desc {
+        font-size: 15px;
+    }
+    .input_link {
+        height: 50px;
+    }
+    .button_label {
+        height: 45px;
+        font-size: 15px;
+    }
+    .form__wrp {
+        row-gap: 12px;
+        margin-bottom: 50px;
     }
     
 }

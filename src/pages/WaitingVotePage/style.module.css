@@ -18,6 +18,7 @@
     color: var(--main-black);
     display: block;
     margin: 30px auto 150px;
+    text-align: justify;
 }
 
 
@@ -63,14 +64,16 @@
 @media screen and (max-width: 390px) {
     .text {
         font-size: 15px;
-        width: 310px;
-        margin-top: 100px;
+        width: 280px;
+        margin-top: 110px;
+        margin-bottom: 100px;
     } 
 }
 @media screen and (max-width: 345px) {
     .text {
         font-size: 15px;
         width: 260px;
-        margin-top: 100px;
+        margin-top: 110px;
+        
     } 
 }
