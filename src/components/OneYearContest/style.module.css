@@ -121,12 +121,15 @@
 }
 @media screen and (max-width: 325px) {
     .info__name {
-        font-size: 28px;
+        font-size: 25px;
+    }
+    .info__name::after {
+        margin: 5px 0;
     }
     .info__status {
-        font-size: 20px;
+        font-size: 18px;
     }
     .date {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
