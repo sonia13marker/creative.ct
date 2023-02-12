@@ -11,7 +11,7 @@ export function DetailOneProject ({name, description, project_link}) {
 
                 <span className={style.project__link}>
                 Ссылка на проект:     
-                    <a href="/#">
+                    <a href={project_link}>
                         {project_link}
                     </a>
                 </span>

@@ -1,63 +1,9 @@
-.wrapper {
+.wt {
     overflow-x: hidden;
+}
+
+.wrapper {
     margin-bottom: 100px;
-}
-
-.wrapper__timer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    position: relative;
-
-}
-
-.timer__h2 {
-    font-family: 'Ruda', sans-serif;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 55px;
-    color: var(--main-black);
-}
-.timer {
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    font-size: 90px;
-    line-height: 117px;
-    text-transform: uppercase;
-    color: var(--main-black);
-}
-.timer__desc {
-    display: table-cell;
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    color: var(--main-black);
-    text-transform: lowercase;
-    padding: 5px 45px;
-}
-
-.timer__line {
-    width: 350px;
-    height: 80px;
-    background-color: var(--main-yel);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    position: absolute;
-    top: 50px;
-}
-
-.timer__line > p {
-    font-family: 'Ruda', sans-serif;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
-    color: var(--main-black);
-    text-transform: lowercase;
 }
 
 .wrapper__form {
@@ -133,21 +79,6 @@ label {
     position: relative;
 }
 
-/* .span_inputs span {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 0.5rem;
-    width: 255px;
-    height: 45px;
-    background-color: var(--main-white);
-    border: 1.5px solid var(--main-black);
-    font-family: 'Sintony', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    color: var(--main-black);
-} */
 .button_label {
     margin-top: 20px;
     display: flex;
@@ -436,119 +367,4 @@ label {
         left:13vw;
     }
     
-}
-
-/*для таймера*/
-
-@media screen and (max-width: 1390px) {
-    .wrapper__timer {
-        margin-right: 30px;
-    }
-    .timer__line {
-        right: -30px;
-    }
-    
-}
-
-@media screen and (max-width: 1340px) {
-    .wrapper__timer {
-        margin-right: 150px;
-    }
-    .timer__line {
-        right: -150px;
-    }
-    
-}
-@media screen and (max-width: 1225px) {
-    .wrapper__timer {
-        margin-right: 200px;
-    }
-    .timer__line {
-        right: -200px;
-    }
-    
-}
-@media screen and (max-width: 1190px) {
-    .wrapper__timer {
-        margin-right: 250px;
-    }
-    .timer__line {
-        right: -250px;
-    }
-    
-}
-@media screen and (max-width: 1130px) {
-    .wrapper__timer {
-        margin-right: 250px;
-    }
-    .timer__line {
-        width: 300px;
-    }
-    .timer__line > p{
-        font-size: 40px;
-    } 
-}
-@media screen and (max-width: 1035px) {
-    .timer__h2 {
-        font-size: 40px;
-    }
-    .timer {
-        font-size: 75px;
-    }
-    .timer__desc {
-        padding: 0 30px;
-    }
-}
-@media screen and (max-width: 950px) {
-    .timer__line {
-        width: 280px;
-    }
-    .timer__line > p{
-        font-size:38px;
-    } 
-}
-@media screen and (max-width: 910px) {
-    .timer__line {
-        width: 100vw;
-        height: 60px;
-        top: -100px;
-        right: 0;
-    }
-    .timer__line > p, .timer__h2{
-        font-size: 30px;
-    } 
-    .wrapper__timer {
-        margin-right: 0;
-        margin-top: 200px;
-    }
-    .timer {
-        font-size: 65px;
-    }
-    .timer__desc {
-        font-size: 15px;
-        padding: 0 28px;
-    }
-
-}
-@media screen and (max-width: 460px) {
-    .timer__line > p{
-        font-size: 20px;
-    } 
-    .timer__line {
-        height: 50px;
-    }
-    .timer__h2 {
-        font-size: 18px;
-    }
-    .timer {
-        font-size: 45px;
-        line-height: 56px;
-    }
-    .timer__desc {
-        font-size: 12px;
-        padding: 0 18px;
-    }
-    .wrapper__timer {
-        margin-bottom: -30px;
-    }
 }

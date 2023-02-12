@@ -62,7 +62,7 @@ export function RulesPage () {
                     <p className={style.attention}>#важно</p> 
                     </span>
                     <span className={style.rules__text}>
-                    <p>Отдать свой голос можно только <span className={style.rules__span1}>один раз,</span> выбирай сердцем и душой! </p>
+                    <p>Отдать свой голос в одном голосовании можно только <span className={style.rules__span1}>один раз,</span> выбирай сердцем и душой! </p>
                     </span>
                 </span>
             </div>
