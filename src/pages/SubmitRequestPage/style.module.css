@@ -415,8 +415,10 @@ label {
         width: 170px;
     }
     .input_file {
+        top: 195px;
         left: 9.5vw;
     }
+
     
 }
 @media screen and (max-width: 340px) {
