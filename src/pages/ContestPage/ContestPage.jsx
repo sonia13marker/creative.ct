@@ -11,8 +11,6 @@ import { Footer } from '../../components/Footer/Footer';
 /*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
 
 export function ContestPage () {
-
-    console.log(informations)
     return (<div className={style.wr}>
 
             <HeaderMenuFull />

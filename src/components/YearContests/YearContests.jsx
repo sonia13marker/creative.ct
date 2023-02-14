@@ -6,7 +6,6 @@ import { OneYear } from '../OneYear/OneYear';
 
 /*тут отображение всех конкурсов за один год */
 export function YearContests ({inf}) {
-console.log(inf)
     return (<>
 
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Menu = ({active, setActive}) => {
     return (
-       <div >
+       <div className={style.rop}>
             <div className={active ? classnames(style.menu, style.active) : style.menu} onClick={() => setActive(false)}>
                     <div className={style.menu__content} onClick={e => e.stopPropagation()}>
                     <ul className={style.one_ul}>
@@ -16,8 +16,6 @@ export const Menu = ({active, setActive}) => {
                     </ul>
                     </div>
 
-                
-                {/*  */}
             </div>
 
         </div>

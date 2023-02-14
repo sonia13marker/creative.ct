@@ -12,10 +12,10 @@ export function OneYear(innf){
     
     const [isActive, setIsActive] = useState(false);
     
-    return <div className={style.preekol}>
+    return <div className={style.preekol} onClick={() => setIsActive(!isActive)}>
 
 {/*аккордеон */}
-  <div className={style.accordeon__title} onClick={() => setIsActive(!isActive)}>
+  <div className={style.accordeon__title}>
 
 {/*год и стрелка для раскрытия */}
 <span className={style.arrow_wrap}>
