@@ -1,7 +1,7 @@
 
 import style from './style.module.css';
 import { OneProject } from '../OneProject/OneProject';
-import { ShowMoreBtn } from '../ShowMoreBtn/ShowMoreBtn';
+
 
 
 export function AllProjects () {
@@ -43,6 +43,32 @@ export function AllProjects () {
             "name" : "@43foew_12",
             "description" : "Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о омов, купля дома, дом в районе, купить дом в области, дома без посредников, жилой дом, дом в харькове, строительство домов, купить дом в районе, большой Дом, купить",
             "project_link" : "https://lkigeodide__835od.net"
+        },
+        {
+            "id" : "07",
+            "name" : "@43foew_12",
+            "description" : "Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о ",
+            "project_link" : "https://lkigeojfod.net"
+
+        },
+        {
+            "id" : "08",
+            "name" : "@43foew_12",
+            "description" : "Немного информации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о омов, купля дома, дом в районе, купить дом в области, дома без посредников, жилой дом, дом в харькове, строительство домов, купить дом в районе, большой Дом, купить",
+            "project_link" : "https://lkigeodide__835od.net"
+        },
+        {
+            "id" : "09",
+            "name" : "@43foew_12",
+            "description" : "Немного информациdshbgfnhgmhj,jdsvdksnvkdsnvkv  ndksnv fnkajfkcndsk dnwkadk gdygsy ahdhsbdh vkmdsljmvkldnv jsabfjhsи о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о ",
+            "project_link" : "https://lkigeojfod.net"
+
+        },
+        {
+            "id" : "10",
+            "name" : "@43fofehgtrhyhew_12",
+            "description" : "Немного инфоdwafew vswfe ewffewg gvrt рмации о проекте: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam nisi. Немного информации о омов, купля дома, дом в районе, купить дом в области, дома без посредников, жилой дом, дом в харькове, строительство домов, купить дом в районе, большой Дом, купить",
+            "project_link" : "https://lkigeodide__835od.net"
         }
     ]
 
@@ -60,7 +86,7 @@ export function AllProjects () {
 
                     
                     <OneProject infos={infos}/>
-                    <ShowMoreBtn/>
+                    {/* <ShowMoreBtn/> */}
                 </div>
 
         </div>

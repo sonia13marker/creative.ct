@@ -33,6 +33,9 @@ for (let i = 0; i < buttonOn.length; i++) {
 
  } 
 
+ const handleClick = event => {
+  event.currentTarget.disabled = true;
+};
 
 
   /*modal window library */
@@ -42,6 +45,7 @@ for (let i = 0; i < buttonOn.length; i++) {
   function openModal() {
     // clickNo();
     setIsOpen(true);
+    handleClick(true);
     /*its for disabled buttons*/
     // setClickNo(false);
 

@@ -4,7 +4,6 @@ import { ProjectVoteButton } from '../ProjectVoteBtn/ProjectVoteBtn';
 import { useState } from 'react';
 
 export function DetailOneProject ({name, description, project_link}) {
-    const [disable, setDisable] = useState(false);
     return (<>
                 <div className={style.project__wrapper}>
                 <p className={style.project__name}>{name}</p>
@@ -20,7 +19,7 @@ export function DetailOneProject ({name, description, project_link}) {
 
                 <img src={plug} className={style.project__img} alt="project"/>
                 
-                <ProjectVoteButton disabled={disable} onClick={() => setDisable(true)}/>
+                <ProjectVoteButton />
                 </div>
 
 
