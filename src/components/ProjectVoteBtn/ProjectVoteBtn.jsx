@@ -14,11 +14,38 @@ const customStyles = {
     },
   };
 
+
+
+  // function noClick() {
+  //   setClickNo(false);
+  // };
 export function ProjectVoteButton () {
-    let subtitle;
+  /*for disables button */
+  
+ function clickNo() {
+  let buttonOn = document.querySelectorAll('button');
+
+for (let i = 0; i < buttonOn.length; i++) {
+  buttonOn[i].onclick = function() {
+    this.disabled = true;
+  }
+}
+
+ } 
+
+
+
+  /*modal window library */
+  let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [click, setClickNo] = useState(true);
   function openModal() {
+    // clickNo();
     setIsOpen(true);
+    /*its for disabled buttons*/
+    // setClickNo(false);
+
+    
   }
 
   function afterOpenModal() {
