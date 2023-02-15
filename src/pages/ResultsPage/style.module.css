@@ -1,0 +1,98 @@
+.yoi {
+    overflow-x: hidden;
+}
+
+.title_line {
+    width: 100vw;
+    border-bottom: 1.5px solid var(--main-black);
+    padding: 115px 95px;
+}
+
+.title__h2 {
+    font-family: 'Sintony', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--main-black);
+    padding-bottom: 25px;
+}
+
+.line__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*медиа запросы*/
+
+@media screen and (max-width: 1280px) {
+    .title_line {
+        padding: 115px 75px;
+    }
+    
+}
+
+@media screen and (max-width: 1115px) {
+    .title_line {
+        padding: 95px 55px;
+    }
+    .title__h2 {
+        font-size: 35px;
+        padding-bottom: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 935px) {
+    .title_line {
+        padding: 75px 45px;
+    }
+    .title__h2 {
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .title_line {
+        padding: 55px 45px;
+    }
+    .title__h2 {
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .title_line {
+        padding: 45px;
+    }
+    .title__h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title_line {
+        padding: 45px 35px;
+    }
+    .title__h2 {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .title_line {
+        margin-top: 10px;
+        padding: 35px;
+    }
+    .title__h2 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .title_line {
+        margin-top: 15px;
+    }
+}
