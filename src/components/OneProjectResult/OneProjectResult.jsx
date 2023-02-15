@@ -3,8 +3,8 @@ import plug from '../../images/plug.png';
 
 export function OneProjectResult ({win}) {
     console.log(win);
-    return <div>
-                <div className={style.project__wrapper}>
+    return <div className={style.project__wrapper}>
+                <div className={style.grid__project}>
                 <p className={style.project__name}>{win.name}</p>
 
                 <p className={style.project__description}>{win.description}</p>
