@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: var(--main-white);
+    width: 100vw;
+    height: 100vh;
+    background: url(../../images/404page__text1.svg);
+
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        background: url(../../images/404page__text1_small.svg);
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .wrapper {
+        background: url(../../images/404page__text1_small2.svg);
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        background: url(../../images/404page__text1_small3.svg);
+    }
+    
+}

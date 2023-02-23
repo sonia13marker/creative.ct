@@ -8,6 +8,7 @@ import { SubmitRequestPage } from './pages/SubmitRequestPage/SubmitRequestPage';
 import { VotePage } from './pages/VotePage/VotePage';
 import { WaitingVotePage } from './pages/WaitingVotePage/WaitingVotePage';
 import { ResultsPage } from './pages/ResultsPage/ResultsPage';
+import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
 
 export const App = () => {
   return (
@@ -22,6 +23,7 @@ export const App = () => {
         <Route path="/vote" element={<VotePage/>}/>
         <Route path="/waiting-vote" element={<WaitingVotePage/>}/>
         <Route path="/results" element={<ResultsPage/>}/>
+        <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
     </BrowserRouter>
 
