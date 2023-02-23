@@ -5,6 +5,7 @@
     row-gap: 1.5rem;
     margin: 0; */
 }
+
 .grid__project {
     width: 720px;
     border: 1.5px solid var(--main-black);
@@ -13,6 +14,15 @@
     border-top: none;
     height: auto;
 }
+/* .grid__project:first-of-type {
+    background-color: blanchedalmond;
+    width: 100vw;
+}  */
+
+/* .grid__project #01 {
+    background-color: red;
+    width: 100vw;
+} */
 .project__name, .project__description, .project__link {
     font-family: 'Sintony', sans-serif;
     font-weight: 400;

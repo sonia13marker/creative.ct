@@ -15,12 +15,23 @@
     color: var(--main-black);
     padding-bottom: 25px;
 }
-
+/* .one_project:first-of-type {
+    background-color: aqua;
+    width: 100%;
+    border: none;
+} */
+#01 {
+    background-color: red;
+    width: 100vw;
+}
 .line__wrap {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.one_project {
+    color: blue;
 }
 
 /*медиа запросы*/

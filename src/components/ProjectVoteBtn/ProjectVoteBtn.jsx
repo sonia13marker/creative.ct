@@ -16,38 +16,28 @@ const customStyles = {
 
 
 
-  // function noClick() {
-  //   setClickNo(false);
-  // };
+
 export function ProjectVoteButton () {
+
   /*for disables button */
-  
- function clickNo() {
-  let buttonOn = document.querySelectorAll('button');
 
-for (let i = 0; i < buttonOn.length; i++) {
-  buttonOn[i].onclick = function() {
-    this.disabled = true;
-  }
-}
-
- } 
+//   const [isDisabled, setDisabled] = useState(false);
+// const [oneClick, setOneClick] = useState(0);
 
  const handleClick = event => {
-  event.currentTarget.disabled = true;
+    event.currentTarget.disabled = true;
+
+
 };
 
 
   /*modal window library */
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [click, setClickNo] = useState(true);
+
+  {/*если кнопка была нажата один раз - применить disabled */}
   function openModal() {
-    // clickNo();
-    setIsOpen(true);
-    handleClick(true);
-    /*its for disabled buttons*/
-    // setClickNo(false);
+    // setIsOpen(true);
 
     
   }
@@ -60,7 +50,8 @@ for (let i = 0; i < buttonOn.length; i++) {
   }
 
     return (<>
-        <button name="vote" id="project__vote_btn" className={style.project__btn} onClick={openModal}>Голосовать
+    {/**setClick={() => setOneClick === 1} disabled={setOneClick === 1 ?? false} */}
+        <button name="vote" id="project__vote_btn" className={style.project__btn} onClick={openModal} >Голосовать
         </button>
 
         <Modal
