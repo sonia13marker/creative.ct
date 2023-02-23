@@ -15,14 +15,20 @@
 
 }
 
-
+/*реализация троеточия у текста, емли он больше 320 символов*/
 .project__description {
+    display: block;
     width: 31rem;
     height: auto;
     max-height: 15rem;
     overflow: hidden;
-
+    padding: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* количество строк */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
+
 
 .project__link > a{
     padding-left: 5px;

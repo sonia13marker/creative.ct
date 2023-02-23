@@ -20,7 +20,7 @@ export function SubmitRequestPage () {
                 <span>
                     <label>
                     Расскажи о своем проекте:
-                        <textarea className={style.input_textarea} placeholder="Не более 500 символов" name="description" id="form__textarea" maxlength="500"></textarea>
+                        <textarea className={style.input_textarea} placeholder="Не более 350 символов" name="description" id="form__textarea" maxlength="350"></textarea>
                     </label>
                 </span>
 

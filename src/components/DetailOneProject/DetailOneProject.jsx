@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 export function DetailOneProject ({name, description, project_link}) {
     return (<>
+    {/*попробовать сделать - если символов больше чем 270, то текст урезать и в конец добавлять "..."*/}
+    
                 <div className={style.project__wrapper}>
                 <p className={style.project__name}>{name}</p>
 
