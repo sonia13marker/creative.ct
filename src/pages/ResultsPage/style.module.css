@@ -17,10 +17,14 @@
 }
 .pop {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    /* display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    
 }
 .line__wrap {
     display: flex;
