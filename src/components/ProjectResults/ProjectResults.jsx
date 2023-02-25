@@ -4,12 +4,11 @@ import { OneProjectResult } from '../OneProjectResult/OneProjectResult';
 export function ProjectResults ({winner}) {
     return <>
     {
-        Object.values(winner).map((win, id)=>{
+        Object.values(winner).map((win, i)=>{
                 console.log(win);
-                return (
-                <section key={id} className={style.one_project}>
+                return (<section key={i} className={style.one_project}>
                     
-                    <OneProjectResult win={win}/>
+                    <OneProjectResult win={win} />
                 </section>)
         })
     }

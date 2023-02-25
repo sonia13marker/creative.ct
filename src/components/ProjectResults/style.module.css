@@ -1,3 +1,17 @@
-.one_project:first-child {
-    background-color: brown;
+
+.one_project:nth-child(1) {
+    background-color: blue;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one_project {
+    width: 720px;
+    border: 1.5px solid var(--main-black);
+    padding: 90px 85px;
+    margin: 0;
+    border-top: none;
+    height: auto;
 }

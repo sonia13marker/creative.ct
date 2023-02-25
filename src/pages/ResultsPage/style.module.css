@@ -15,14 +15,12 @@
     color: var(--main-black);
     padding-bottom: 25px;
 }
-/* .one_project:first-of-type {
-    background-color: aqua;
-    width: 100%;
-    border: none;
-} */
-#01 {
-    background-color: red;
-    width: 100vw;
+.pop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 .line__wrap {
     display: flex;

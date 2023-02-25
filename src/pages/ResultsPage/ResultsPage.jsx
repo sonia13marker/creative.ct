@@ -27,16 +27,8 @@ export function ResultsPage () {
             {
             Object.values(winners).map((winner, id) => {
                 console.log(winner)
-                return <div id={id}><ProjectResults winner={winner}></ProjectResults>
+                return <div key={id} className={style.pop}><ProjectResults winner={winner}></ProjectResults>
                 </div>}
-            // return (Object.entries(winner).map((win, di)=>{
-            //     console.log(win);
-            //     return (
-            //     <section key={id} className={style.one_project}>
-                    
-            //         <OneProjectResult win={win}/>
-            //     </section>)
-            //     })
             )}
         </main>
 
