@@ -1,13 +1,17 @@
 
 .one__project {
     display: block;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1rem 15rem 4rem;
+    row-gap: 2rem;
 }
 .project__place {
     font-family: 'Sintony', sans-serif;
     font-weight: 700;
     font-size: 45px;
     color: var(--main-yel);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .project__place::first-letter {
     color: var(--main-black);
@@ -28,11 +32,16 @@
 
 
 .project__description {
+    display: block;
     width: 31rem;
     height: auto;
     max-height: 15rem;
     overflow: hidden;
-    margin-bottom: 60px;
+    padding: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* количество строк */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
 
 .project__link {
@@ -54,6 +63,7 @@
     aspect-ratio: 4/3;
     width: 100%;
     object-fit: contain;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 1210px) {

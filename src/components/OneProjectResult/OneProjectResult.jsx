@@ -1,19 +1,19 @@
 import style from './style.module.css';
 import plug from '../../images/plug.png';
 
-export function OneProjectResult ({win}) {
+export function OneProjectResult ({prize_place, name, description, project_link}) {
     return <div className={style.grid__project}>
 
                     <div className={style.one__project}>
-                        <p className={style.project__place}> {win.prize_place} </p>
-                        <p className={style.project__name}>{win.name}</p>
+                        <p className={style.project__place}> {prize_place} </p>
+                        <p className={style.project__name}>{name}</p>
 
-                        <p className={style.project__description}>{win.description}</p>
+                        <p className={style.project__description}>{description}</p>
 
                         <span className={style.project__link}>
                         Ссылка на проект:     
-                            <a href={win.project_link}>
-                                {win.project_link}
+                            <a href={project_link} target="_blank">
+                                {project_link}
                             </a>
                         </span>
 

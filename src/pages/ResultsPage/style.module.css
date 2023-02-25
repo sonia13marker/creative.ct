@@ -1,6 +1,9 @@
 .yoi {
     overflow-x: hidden;
 }
+.main {
+    margin-bottom: 200px;
+}
 
 .title_line {
     width: 100vw;
@@ -20,11 +23,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    /* display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; */
-    
+    align-items: center;  
+    margin-bottom: 70px;
 }
 .line__wrap {
     display: flex;

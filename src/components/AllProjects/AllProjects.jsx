@@ -86,7 +86,6 @@ export function AllProjects () {
 
                     
                     <OneProject infos={infos}/>
-                    {/* <ShowMoreBtn/> */}
                 </div>
 
         </div>

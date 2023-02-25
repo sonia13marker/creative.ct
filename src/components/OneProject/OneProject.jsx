@@ -1,7 +1,6 @@
 import style from './style.module.css';
 import { DetailOneProject } from '../DetailOneProject/DetailOneProject';
 import see_arrow from '../../images/see_more_arrow.svg';
-import { OneProjectResult } from '../OneProjectResult/OneProjectResult';
 import { useEffect, useState } from 'react';
 import informations from '../../constants/mock.json';
 
@@ -25,7 +24,7 @@ const showMoreItems = () => {
                 {infos.slice(0, visible).map((info, id) => (
                     <section key={id}  className={style.grid__project}>
                     <DetailOneProject {...info} />
-                    {/* <OneProjectResult info={info}/> */}
+                    
                     </section>
                  ))}
                

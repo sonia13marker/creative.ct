@@ -8,7 +8,7 @@ export function ProjectResults ({winner}) {
                 console.log(win);
                 return (<section key={i} className={style.one_project}>
                     
-                    <OneProjectResult win={win} />
+                    <OneProjectResult {...win} />
                 </section>)
         })
     }
