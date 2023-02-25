@@ -33,6 +33,11 @@
     align-items: center;
 }
 
+@media screen and (max-width: 1220px) {
+    .pop {
+        flex-direction: column;
+    }
+}
 
 /*медиа запросы*/
 
