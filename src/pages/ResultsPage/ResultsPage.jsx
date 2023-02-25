@@ -5,6 +5,7 @@ import { Footer } from '../../components/Footer/Footer';
 import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 import { OneProjectResult } from '../../components/OneProjectResult/OneProjectResult'; 
 import winners from '../../constants/mock1.json';
+import { ProjectResults } from '../../components/ProjectResults/ProjectResults';
 
 export function ResultsPage () {
     return (<div className={style.yoi}>
@@ -25,12 +26,18 @@ export function ResultsPage () {
 
             {
             Object.values(winners).map((winner, id) => {
-            return (Object.values(winner).map((win, di)=>{
-                return (<section key={id} className={style.one_project}>
-                    <OneProjectResult win={win}/>
-                </section>)
-                })
-            )})}
+                console.log(winner)
+                return <div id={id}><ProjectResults winner={winner}></ProjectResults>
+                </div>}
+            // return (Object.entries(winner).map((win, di)=>{
+            //     console.log(win);
+            //     return (
+            //     <section key={id} className={style.one_project}>
+                    
+            //         <OneProjectResult win={win}/>
+            //     </section>)
+            //     })
+            )}
         </main>
 
         <MediaQuery minWidth={576}>

@@ -2,7 +2,7 @@ import style from './style.module.css';
 import plug from '../../images/plug.png';
 
 export function OneProjectResult ({win}) {
-    console.log(win);
+    // console.log(win);
     return <div className={style.project__wrapper}>
                 <div className={style.grid__project}>
                 <p className={style.project__name}>{win.name}</p>
