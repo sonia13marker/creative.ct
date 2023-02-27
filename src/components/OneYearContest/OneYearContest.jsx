@@ -2,26 +2,14 @@ import style from './style.module.css';
 import arrow_top from '../../images/arrow__list_top.svg'
 import { Link } from 'react-router-dom';
 import { GoBtn } from '../GoBtn/GoBtn';
-import { DetailYearContest } from '../DetailYearContest/DetailYearContest';
 
 /*тут отображение деталей одного конкурса за определенный год */
 export function OneYearContest ({name, status, date, statusInNumber}) {
-    // console.log(inpf)
 
-    
-    return (<>
+    return (<div className={style.container}>
 
         {/*инфа в виде блоков в раскрывающемся списке */}
-
-        <div>
-        {/* {Object.values(inpf).map((indf, id) => {
-    console.log(indf)
-    return <DetailYearContest key={id} {...indf}>
-         
-    </DetailYearContest>;
-    })}
-        </div> */}
-        {/* <div className={style.container__info}> */}
+        <div className={style.container__info}>
                     
         {/*верхняя полоска с названием и статусом конкурса */}
         <div className={style.info}>
@@ -38,6 +26,6 @@ export function OneYearContest ({name, status, date, statusInNumber}) {
         </div>
     {/*конец инфы в виде блоков */}  
     </div>
- </>
+ </div>
 
 )}

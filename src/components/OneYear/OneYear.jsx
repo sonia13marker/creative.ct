@@ -7,23 +7,32 @@ import classnames from "classnames";
 import { GoBtn } from '../GoBtn/GoBtn';
 
 
-export function OneYear({innf}){
+export function OneYear(innf){
     console.log(innf);
     
+    const [isActive, setIsActive] = useState(false);
+    
+    return <div className={style.preekol}>
 
-    return <div>
-      {Object.values(innf).map((inpf, di) => {
-            return <OneYearContest key={di} {...inpf} />;
-          })}
+{/*аккордеон */}
+  <div className={style.accordeon__title} onClick={() => setIsActive(!isActive)}>
 
-  {/* { isActive && <div className={style.accordeon__content}>
+{/*год и стрелка для раскрытия */}
+<span className={style.arrow_wrap}>
+  <p>#2023</p>
+  <span className={style.year__arrow_top}>
+      {isActive ? <img src={arrow_top} alt=""/> : <img src={arrow_bottom}/>}
+  </span>  
+</span>
+</div>
+  { isActive && <div className={style.accordeon__content}>
     {Object.values(innf).map((inf, id) => {
     console.log(inf)
     return <OneYearContest key={id} {...inf}>
-         
+          {/* <GoBtn statusInNumber={1}></GoBtn> */}
     </OneYearContest>;
     })}
-  </div>} */}
+  </div>}
         
 
         

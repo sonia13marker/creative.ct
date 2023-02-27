@@ -1,6 +1,7 @@
 import style from './style.module.css';
 import MediaQuery from 'react-responsive';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
+import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { YearContests } from '../../components/YearContests/YearContests';
 import informations from '../../constants/mock.json';
 import { SubmitRequestPage } from '../SubmitRequestPage/SubmitRequestPage';
@@ -15,15 +16,16 @@ export function ContestPage () {
 
             <HeaderMenuFull />
 
-        {/*тут будет инфа о всех конкурсах*/}
-        <div className={style.container}>
+         {/*тут будет инфа о всех конкурсах*/}
+         <div className={style.container}>
             <h2 className={style.container__h2}>Конкурсы</h2>
             <div className={style.prikol}>
             {
             Object.values(informations).map((info ,id)=>{      
-                return (Object.values(info).map((inf, dip)=>{
+                return (Object.values(info).map((inf, di)=>{
                     console.log(inf);
-                    return (<YearContests key={dip} inf={inf}></YearContests>)
+                    <p>{inf}</p>
+                    return (<YearContests key={di} inf={inf}></YearContests>)
                     
                 })
             )})
