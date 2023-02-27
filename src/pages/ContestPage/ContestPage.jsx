@@ -21,9 +21,9 @@ export function ContestPage () {
             <div className={style.prikol}>
             {
             Object.values(informations).map((info ,id)=>{      
-                return (Object.values(info).map((inf, di)=>{
+                return (Object.values(info).map((inf, dip)=>{
                     console.log(inf);
-                    return (<YearContests key={di} inf={inf}></YearContests>)
+                    return (<YearContests key={dip} inf={inf}></YearContests>)
                     
                 })
             )})

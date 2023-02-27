@@ -50,15 +50,18 @@ export function YearContests({ inf }) {
         <div className={style.section__block_year}>
 
 
-          {/*выравнивание всех блоков с годами конкурсов*/}
+
 <div className={style.year_flex}>
             {/*отображение года */}
 
-            {Object.keys(inf).map((dtf) => {
-              return <div className={style.one_block} onClick={() => setIsActive(!isActive)}>
+            {Object.keys(inf).map((dtf, pi) => {
+              return  <div key={pi} className={style.one_block} onClick={() => setIsActive(!isActive)}>
+                
+
                 <div className={style.block_wrap}> 
+                
               
-              <h2 className={style.year__h2}>#{dtf}</h2>
+              <h2 className={style.year__h2} >#{dtf}</h2>
               
         {/*отображение стрелки*/}
 
@@ -66,14 +69,39 @@ export function YearContests({ inf }) {
               {isActive ? (
                 <img src={arrow_top} alt="" />
               ) : (
-                <img src={arrow_bottom} />
+                <img src={arrow_bottom} alt="" />
               )}
             </span>
             </div>
+            
 
 {/*инфа о конкурсах при раскрытии*/}
 
-<OneYear {...inf} />
+
+{Object.values(inf).map((innf, ids) => {
+            return <OneYear key={ids} innf={innf} />;
+          })}
+
+{/* {isActive && <div className={style.accordeon__content}>
+
+<OneYear  inf={inf} />
+</div>} */}
+
+{isActive && <div className={style.accordeon__content}>
+          {Object.values(inf).map((innf, ids) => {
+            return <OneYear key={ids} innf={innf} />;
+          })}
+        </div> }
+
+{/* {isActive && <div className={style.accordeon__content}>
+          {Object.entries(inf).map((innf, ids) => {
+            // <h2>{innf}</h2>
+            console.log(innf)
+            Object.values(innf).map((gip, pid) => console.log(gip, pid))
+          })}
+        </div> } */}
+
+
 
 {/* <div className={style.section__year_inf}>
           {Object.values(inf).map((innf, ids) => {
