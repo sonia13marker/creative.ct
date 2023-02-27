@@ -12,19 +12,20 @@ export function OneYear(innf){
     
     const [isActive, setIsActive] = useState(false);
     
+    // className={style.preekol} onClick={() => setIsActive(!isActive)}
     return <div className={style.preekol} onClick={() => setIsActive(!isActive)}>
 
 {/*аккордеон */}
-  <div className={style.accordeon__title}>
+  {/* <div className={style.accordeon__title}> */}
 
 {/*год и стрелка для раскрытия */}
-<span className={style.arrow_wrap}>
+{/* <span className={style.arrow_wrap}>
   <p>#2023</p>
   <span className={style.year__arrow_top}>
       {isActive ? <img src={arrow_top} alt=""/> : <img src={arrow_bottom}/>}
   </span>  
 </span>
-</div>
+</div> */}
   { isActive && <div className={style.accordeon__content}>
     {Object.values(innf).map((inf, id) => {
     console.log(inf)

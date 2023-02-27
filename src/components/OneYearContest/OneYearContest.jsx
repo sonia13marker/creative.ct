@@ -6,7 +6,7 @@ import { GoBtn } from '../GoBtn/GoBtn';
 /*тут отображение деталей одного конкурса за определенный год */
 export function OneYearContest ({name, status, date, statusInNumber}) {
 
-    return (<div className={style.container}>
+    return (<>
 
         {/*инфа в виде блоков в раскрывающемся списке */}
         <div className={style.container__info}>
@@ -26,6 +26,6 @@ export function OneYearContest ({name, status, date, statusInNumber}) {
         </div>
     {/*конец инфы в виде блоков */}  
     </div>
- </div>
+ </>
 
 )}
