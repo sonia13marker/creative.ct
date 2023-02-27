@@ -1,4 +1,7 @@
-
+.years {
+    display: flex;
+    flex-direction: column-reverse;
+}
 .year__h2 {
     font-family: 'Sintony', sans-serif;
     font-weight: 700;
