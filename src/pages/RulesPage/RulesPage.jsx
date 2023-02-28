@@ -13,7 +13,7 @@ export function RulesPage () {
         <div className={style.container}>
         <div className={style.rules_cont}>
             <h2 className={style.container__h2}>
-            Перед участием в конкурсе <br/> обязательно ознакомьтесь с нашими <span className={style.h2__span}>правилами</span>
+            Перед участием в конкурсе обязательно ознакомьтесь с нашими <span className={style.h2__span}>правилами</span>
             </h2>
             
             
