@@ -98,6 +98,10 @@
 .media__links > a {
     color: #555;
 }
+.media__links > a:hover {
+    color: var(--main-yel);
+}
+
 @media screen and (max-width:1435px) {
     .section_text {
     padding-left: 3.5rem;
