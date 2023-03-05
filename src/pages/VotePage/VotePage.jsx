@@ -9,6 +9,8 @@ import { Timer } from '../../components/Timer/Timer';
 
 export function VotePage () { 
 
+    let timeTimer = "2023-03-20T00:00:00";
+
     return (<div className={style.wp}>
 
             <HeaderMenuFull />
@@ -16,7 +18,7 @@ export function VotePage () {
         {/* таймер*/}
 {/* пыталась передавать дату вот так: 
 dates={"2023-03-15T00:00:00"}*/}
-        <Timer stageCompetition={3} />
+        <Timer stageCompetition={3} time={timeTimer}/>
 
         {/*основная часть - сетка с проектами */}
         <AllProjects></AllProjects>

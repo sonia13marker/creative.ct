@@ -6,13 +6,15 @@ import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 import { Timer } from '../../components/Timer/Timer';
 
 export function SubmitRequestPage () {
+
+    let timeTimer = "2023-03-28T00:00:00";
     return (<div className={style.wt}>
 
             <HeaderMenuFull />
 
         <div className={style.wrapper}>
 
-        <Timer stageCompetition={1}></Timer>
+        <Timer stageCompetition={1} time={timeTimer}></Timer>
 
         <section className={style.wrapper__form}>
                 {/*в action указать ссылку на обработку формы (бэк) */}
@@ -20,7 +22,7 @@ export function SubmitRequestPage () {
                 <span>
                     <label>
                     Расскажи о своем проекте:
-                        <textarea className={style.input_textarea} placeholder="Не более 350 символов" name="description" id="form__textarea" maxlength="350"></textarea>
+                        <textarea className={style.input_textarea} placeholder="Не более 350 символов" name="description" id="form__textarea" maxLength="350"></textarea>
                     </label>
                 </span>
 
@@ -31,7 +33,7 @@ export function SubmitRequestPage () {
                         </label>
                         {/*это сделано для стилизации кнопки "добавить фото" */}
                         <p className={style.label__desc}>Прикрепи главную картинку проекта: </p>
-                        <label for="form__input_file" className={style.button_label}>Add file</label>
+                        <label htmlFor="form__input_file" className={style.button_label}>Add file</label>
                             <input type="file" className={style.input_file} name="photo" id="form__input_file"/>
                         
                         <p className={style.input__annotation}>Важно: картинка не должна содержать ненормативной лексики, размер не должен превышать 20 МБ.</p>
