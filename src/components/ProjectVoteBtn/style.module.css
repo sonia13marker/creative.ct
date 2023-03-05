@@ -31,6 +31,10 @@
     background-color: darkgray;
     color: black;
 }
+/* .project__btn_disabled:disabled {
+    background-color: darkgray;
+    color: black;
+} */
 .content__h2 {
     font-family: 'Sintony', sans-serif;
     font-style: normal;

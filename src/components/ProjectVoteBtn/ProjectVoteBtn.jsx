@@ -34,11 +34,13 @@ export function ProjectVoteButton () {
   /*modal window library */
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
+  // let counter = 0;
 
   {/*если кнопка была нажата один раз - применить disabled */}
   function openModal() {
-    // setIsOpen(true);
-
+    setIsOpen(true);
+    // counter = 1;
+    // console.log(counter);
     
   }
 
