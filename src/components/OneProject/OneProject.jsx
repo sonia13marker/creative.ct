@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import informations from '../../constants/mock.json';
 
 
-export function OneProject ({infos}) {
+export function OneProject ({proj}) {
 
          const [items, setItems] = useState([]);
      const [visible, setVisible] = useState(4);
@@ -19,11 +19,12 @@ export function OneProject ({infos}) {
 const showMoreItems = () => {
     setVisible((prevValue) => prevValue + 4);
 }
+console.log(proj)
     return (<div className={style.wrapper}>
                 <div className={style.grid}>
-                {infos.slice(0, visible).map((info, id) => (
+                {Object.values(proj).slice(0, visible).map((pro, id) => (
                     <section key={id}  className={style.grid__project}>
-                    <DetailOneProject {...info} />
+                    <DetailOneProject {...pro} />
                     
                     </section>
                  ))}

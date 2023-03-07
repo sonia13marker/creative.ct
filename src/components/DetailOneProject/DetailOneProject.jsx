@@ -4,6 +4,7 @@ import { ProjectVoteButton } from '../ProjectVoteBtn/ProjectVoteBtn';
 import { useState } from 'react';
 
 export function DetailOneProject ({name, description, project_link}) {
+    console.log(name, description, project_link)
     return (<>
     {/*попробовать сделать - если символов больше чем 270, то текст урезать и в конец добавлять "..."*/}
     
