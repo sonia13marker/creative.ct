@@ -28,9 +28,7 @@ export function OneYear(innf){
   { isActive && <div className={style.accordeon__content}>
     {Object.values(innf).map((inf, id) => {
     console.log(inf)
-    return <OneYearContest key={id} {...inf}>
-          {/* <GoBtn statusInNumber={1}></GoBtn> */}
-    </OneYearContest>;
+    return <OneYearContest key={id} {...inf}/>;
     })}
   </div>}
         

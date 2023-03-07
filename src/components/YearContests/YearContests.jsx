@@ -12,17 +12,27 @@ console.log(inf)
 
             {/*контейнер с годом и стрелкой списка */}
             <section className={style.container__year}>
-                <span className={style.layout}>
+               
 
-                    <h2 className={style.year__h2}>
+                <div className={style.layout}>
+
+                    <div className={style.year__h2}>
+{/* 
+                    <div className={style.year__wrapper}>
+                        {
+                            Object.keys(inf).map((inn, id) => 
+                            <h2 key={id}>#{inn}</h2>)
+                        }
+                    </div> */}
+                       
                     {Object.values(inf).map((innf, ids) => {
                         console.log(innf)
           return (<OneYear key={ids} {...innf}/>);
         })}
        
-                    </h2>
+                    </div>
                     
-                </span>
+                </div>
                 
             </section>
     </>)

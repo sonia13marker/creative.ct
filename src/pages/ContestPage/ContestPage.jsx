@@ -1,12 +1,8 @@
 import style from './style.module.css';
 import MediaQuery from 'react-responsive';
 import { HeaderMenuFull } from '../../components/HeaderMenuFull/HeaderMenuFull';
-import { MenuHamb } from '../../components/MenuHamb/MenuHamb';
 import { YearContests } from '../../components/YearContests/YearContests';
 import informations from '../../constants/mock.json';
-import { SubmitRequestPage } from '../SubmitRequestPage/SubmitRequestPage';
-import { WaitingVotePage } from '../WaitingVotePage/WaitingVotePage';
-import { VotePage } from '../VotePage/VotePage';
 import { FooterSmall } from '../../components/FooterSmall/FooterSmall';
 import { Footer } from '../../components/Footer/Footer';
 /*тут будет инфа о всех конкурсах (то есть инфа о всех годах)*/
@@ -24,7 +20,7 @@ export function ContestPage () {
             Object.values(informations).map((info ,id)=>{      
                 return (Object.values(info).map((inf, di)=>{
                     console.log(inf);
-                    <p>{inf}</p>
+                    
                     return (<YearContests key={di} inf={inf}></YearContests>)
                     
                 })
