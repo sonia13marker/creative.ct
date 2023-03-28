@@ -1,75 +1,70 @@
 {
-    "informations": [
-      {
-        "2023": [
-          {
-            "id": 1,
-            "year": 2023,
-            "name": "Django",
-            "status": "Идет подача заявок",
-            "statusInNumber": 1,
-            "date": "01.01.-20.01"
-          },
-          {
-            "id": 2,
-            "year": 2023,
-            "name": "Django",
-            "status": "Ожидание голосования",
-            "statusInNumber": 0,
-            "date": "18.01.-31.01"
-          },
-          {
-            "id": 3,
-            "year": 2023,
-            "name": "Frontend",
-            "status": "Голосование",
-            "statusInNumber": 3,
-            "date": "01.02.-15.02"
-          },
-          {
-            "id": 4,
-            "year": 2023,
-            "name": "Frontend",
-            "status": "Завершен",
-            "statusInNumber": 5,
-            "date": "13.01.-15.01"
-          }
-        ],
-        "2022": [
-          {
-            "id": 1,
-            "year": 2022,
-            "name": "Django",
-            "status": "Идет подача заявок",
-            "statusInNumber": 1,
-            "date": "01.01.-20.01"
-          },
-          {
-            "id": 2,
-            "year": 2022,
-            "name": "Django",
-            "status": "Ожидание голосования",
-            "statusInNumber": 0,
-            "date": "18.01.-31.01"
-          },
-          {
-            "id": 3,
-            "year": 2022,
-            "name": "Frontend",
-            "status": "Голосование",
-            "statusInNumber": 3,
-            "date": "01.02.-15.02"
-          },
-          {
-            "id": 4,
-            "year": 2022,
-            "name": "Frontend",
-            "status": "Завершен",
-            "statusInNumber": 5,
-            "date": "13.01.-15.01"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "2023": [
+    {
+      "id": 1,
+      "year": 2023,
+      "name": "Django",
+      "status": "Идет подача заявок",
+      "statusInNumber": 1,
+      "date": "01.01.-20.01"
+    },
+    {
+      "id": 2,
+      "year": 2023,
+      "name": "Django",
+      "status": "Ожидание голосования",
+      "statusInNumber": 0,
+      "date": "18.01.-31.01"
+    },
+    {
+      "id": 3,
+      "year": 2023,
+      "name": "Frontend",
+      "status": "Голосование",
+      "statusInNumber": 3,
+      "date": "01.02.-15.02"
+    },
+    {
+      "id": 4,
+      "year": 2023,
+      "name": "Frontend",
+      "status": "Завершен",
+      "statusInNumber": 5,
+      "date": "13.01.-15.01"
+    }
+  ],
+  "2022": [
+    {
+      "id": 1,
+      "year": 2022,
+      "name": "Django",
+      "status": "Идет подача заявок",
+      "statusInNumber": 1,
+      "date": "01.01.-20.01"
+    },
+    {
+      "id": 2,
+      "year": 2022,
+      "name": "Django",
+      "status": "Ожидание голосования",
+      "statusInNumber": 0,
+      "date": "18.01.-31.01"
+    },
+    {
+      "id": 3,
+      "year": 2022,
+      "name": "Frontend",
+      "status": "Голосование",
+      "statusInNumber": 3,
+      "date": "01.02.-15.02"
+    },
+    {
+      "id": 4,
+      "year": 2022,
+      "name": "Frontend",
+      "status": "Завершен",
+      "statusInNumber": 5,
+      "date": "13.01.-15.01"
+    }
+  ]
+}

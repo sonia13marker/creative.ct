@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .arrow_wrap img:hover, 
 .arrow_wrap p,
@@ -23,6 +24,21 @@
     cursor: pointer;
 }
 
+.year__p {
+    font-family: 'Sintony', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 59px;
+    color: #000000;
+}
+
+@media screen and (max-width: 1030px) {
+    .year__p {
+        font-size: 40px;
+    }
+    
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -47,6 +63,9 @@
     }
     .arrow_wrap p {
         font-size: 35px;
+    }
+    .year__p {
+        font-size: 30px;
     }
     
 }
@@ -79,6 +98,9 @@
         height: 20px;
     }
     .arrow_wrap p {
+        font-size: 25px;
+    }
+    .year__p {
         font-size: 25px;
     }
 }
